@@ -1,27 +1,21 @@
 ---
-title: This is my first post.
-description: This is a post on My Blog about agile frameworks.
-date: 2018-05-01
+title: Welcome to The Face Pack
+description: Discover the best sheet, rinse and peel masks from around the world.
+date: 2020-10-01
 limage: https://www.thefacepack.com/fp__img/logo.png
 tags:
-  - another-tag
+  - site
 layout: layouts/post.njk
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+## Welcome to The Face Pack
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+The Face Pack is the ultimate sheet, rinse and peel face mask subscription service, here's a little bit about how we're different...
 
-## Section Header
+## Not Just Sheet Masks
+Whilst we looove a sheet mask and the majority of our subscription features the best sheet masks from around the world, we didn't want you to miss out on the immense variety of other mask types out there. That's why you'll find a selection of sheet, rinse and peel masks in each package.
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+## From All Over The World
+No doubt about it, Korea made masking popular and Korean sheet masks are top quality. That's why there will be loads of them in your Face Pack subscription to discover! But there is a whole world of skin care out there and we'll be including the best masks from Europe, Asia and USA as well.
 
-``` text/2-3
-// this is a command
-function myCommand() {
-	let counter = 0;
-	counter++;
-}
-
-// Test with a line break above this line.
-console.log('Test');
-```
+##Every Package Is Different
+And we mean eeevery package! We don't do themed packages - we're a discovery service and our theme is and always will be "The best masks from around the world". We're also about variety which is why everyone gets a different selection in their package every month. What will you discover?
