@@ -26,13 +26,34 @@ a {
     padding: 1rem;
     border-radius: 0;
     margin: 1rem 0;
+    height: 100%;
 }
 
 .postlist-link, .postlist-date {
     display: block;
 }
+
+.postlist-link {
+    font-family: 'wc_mano_negra_btabold';
+    font-size: 2rem;
+}
+
 .post-leadimage {
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
+}
+
+a.post-tag {
+    color: #fff;
+    background: #ec4471;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.postlist-date {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #6b7377;
 }
