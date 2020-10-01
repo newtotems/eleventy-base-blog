@@ -17,5 +17,5 @@ Whilst we looove a sheet mask and the majority of our subscription features the 
 ## From All Over The World
 No doubt about it, Korea made masking popular and Korean sheet masks are top quality. That's why there will be loads of them in your Face Pack subscription to discover! But there is a whole world of skin care out there and we'll be including the best masks from Europe, Asia and USA as well.
 
-##Every Package Is Different
+## Every Package Is Different
 And we mean eeevery package! We don't do themed packages - we're a discovery service and our theme is and always will be "The best masks from around the world". We're also about variety which is why everyone gets a different selection in their package every month. What will you discover?

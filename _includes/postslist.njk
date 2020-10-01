@@ -4,7 +4,7 @@
   <li class="col-md-4 flex-grow-1">
 <div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %} ">
     {%- if post.data.limage -%}
-      <a href="{{ post.url | url }}"<img src="{{post.data.limage}}" class="post-leadimage"></a>
+      <a href="{{ post.url | url }}"><img src="{{post.data.limage}}" class="post-leadimage"></a>
     {%- endif -%}
 
     <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
