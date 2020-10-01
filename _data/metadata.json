@@ -3,7 +3,7 @@
   "url": "https://blog.thefacepack.com/",
   "description": "A blog about face packs",
   "feed": {
-    "subtitle": "A blog about face packsI am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "A blog about face packs",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://blog.thefacepack.com/"
