@@ -74,11 +74,12 @@
 </div>
 
       <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-
+<section class="header-tagslist">
 {% for tag in collections.tagList %}
   {% set tagUrl %}/tags/{{ tag }}/{% endset %}
   <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
 {% endfor %}
+</section>
 
     </header>
 
