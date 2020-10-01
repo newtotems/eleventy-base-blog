@@ -41,7 +41,7 @@ a {
 .post-leadimage {
     width: 100%;
     max-width: 300px;
-    margin: 0 auto;
+    margin: 0 auto 10px;
 }
 
 a.post-tag {
@@ -56,4 +56,8 @@ a.post-tag {
     font-size: 1rem;
     text-transform: uppercase;
     color: #6b7377;
+}
+
+.fp__header {
+    margin:10px auto 0;max-width: 640px;
 }
