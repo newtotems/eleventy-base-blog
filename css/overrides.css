@@ -59,5 +59,11 @@ a.post-tag {
 }
 
 .fp__header {
-    margin:10px auto 0;max-width: 640px;
+    margin:10px auto 0;max-width: 1024px;
+}
+
+h1.home {
+    font-family: 'wc_mano_negra_btabold';
+    font-size: 4rem;
+    color: #0a1f2d;
 }
