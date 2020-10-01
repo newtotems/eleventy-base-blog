@@ -118,6 +118,14 @@ header {
     padding: 0;
 }
 
+.tmpl-post img {
+    max-width: 100%;
+}
+
+.tmpl-post em {
+    color: #ec4471;
+}
+
 .tmpl-post .direct-link {
     vertical-align: super;
     font-size: 1rem;
