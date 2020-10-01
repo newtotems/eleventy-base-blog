@@ -10,9 +10,6 @@ layout: layouts/post.njk
 
 ![Welcome to The Face Pack - Discover sheet, rinse and peel beauty facial masks from around the world](https://www.thefacepack.com/fp__img/logo.png)
 
-
-## Welcome to The Face Pack
-
 <em>The Face Pack is the ultimate sheet, rinse and peel face mask subscription service, here's a little bit about how we're different...</em>
 
 ## Not Just Sheet Masks
