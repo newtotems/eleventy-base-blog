@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'wc_mano_negra_btabold';
+    src: url('WCManoNegraBoldBta-webfont.eot');
+    src: url('WCManoNegraBoldBta-webfont.eot?#iefix') format('embedded-opentype'),
+        
+         url('WCManoNegraBoldBta-webfont.woff') format('woff'),
+         url('WCManoNegraBoldBta-webfont.ttf') format('truetype'),
+         url('WCManoNegraBoldBta-webfont.svg#wc_mano_negra_btabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    /*font-display: swap;*/
+}
+
+
 a {
     color: #ec4471;
 }
@@ -6,6 +20,19 @@ a {
     max-width: 1080px;
 }
 
+.postlist-item {
+    background: #fff;
+    outline: 1px solid #f3f3f3;
+    padding: 1rem;
+    border-radius: 0;
+    margin: 1rem 0;
+}
+
 .postlist-link, .postlist-date {
     display: block;
+}
+.post-leadimage {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
 }
