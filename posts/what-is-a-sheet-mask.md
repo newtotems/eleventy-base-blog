@@ -4,7 +4,7 @@ description: Sheet masks have exploded in popularity recently but what are they,
 date: 2020-10-01
 limage: img/holding-a-sheet-mask.jpg
 tags:
-  - sheet masks
+  - sheet-masks
 layout: layouts/post.njk
 ---
 
