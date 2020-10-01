@@ -13,7 +13,7 @@ layout: layouts/post.njk
 
 ## Welcome to The Face Pack
 
-The Face Pack is the ultimate sheet, rinse and peel face mask subscription service, here's a little bit about how we're different...
+<em>The Face Pack is the ultimate sheet, rinse and peel face mask subscription service, here's a little bit about how we're different...</em>
 
 ## Not Just Sheet Masks
 Whilst we looove a sheet mask and the majority of our subscription features the best sheet masks from around the world, we didn't want you to miss out on the immense variety of other mask types out there. That's why you'll find a selection of sheet, rinse and peel masks in each package.
