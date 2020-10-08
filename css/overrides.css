@@ -1,16 +1,11 @@
 @font-face {
     font-family: 'wc_mano_negra_btabold';
     src: url('WCManoNegraBoldBta-webfont.eot');
-    src: url('WCManoNegraBoldBta-webfont.eot?#iefix') format('embedded-opentype'),
-        
-         url('WCManoNegraBoldBta-webfont.woff') format('woff'),
-         url('WCManoNegraBoldBta-webfont.ttf') format('truetype'),
-         url('WCManoNegraBoldBta-webfont.svg#wc_mano_negra_btabold') format('svg');
+    src: url('WCManoNegraBoldBta-webfont.eot?#iefix') format('embedded-opentype'), url('WCManoNegraBoldBta-webfont.woff') format('woff'), url('WCManoNegraBoldBta-webfont.ttf') format('truetype'), url('WCManoNegraBoldBta-webfont.svg#wc_mano_negra_btabold') format('svg');
     font-weight: normal;
     font-style: normal;
     /*font-display: swap;*/
 }
-
 
 a {
     color: #ec4471;
@@ -49,7 +44,8 @@ a:hover {
     color: #5d666b;
 }
 
-.postlist-link, .postlist-date {
+.postlist-link,
+.postlist-date {
     display: block;
 }
 
@@ -83,7 +79,8 @@ a.post-tag {
 }
 
 .fp__header {
-    margin:10px auto 0;max-width: 1024px;
+    margin: 10px auto 0;
+    max-width: 1024px;
 }
 
 h1.home {
@@ -103,7 +100,7 @@ header {
 
 .tmpl-post {
     text-align: left;
-    max-width: 600px;
+    max-width: 720px;
     margin: 0 auto;
 }
 
