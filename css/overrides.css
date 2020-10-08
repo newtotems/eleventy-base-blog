@@ -44,6 +44,10 @@ a:hover {
     color: #5d666b;
 }
 
+.postlist-item p a.post-tag {
+    color: #fff;
+}
+
 .postlist-link,
 .postlist-date {
     display: block;
