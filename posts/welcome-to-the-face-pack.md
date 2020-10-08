@@ -2,7 +2,7 @@
 title: Welcome to The Face Pack
 description: Discover the best sheet, rinse and peel masks from around the world.
 date: 2020-10-01
-limage: https://www.thefacepack.com/fp__img/logo.png
+limage: /img/logo.png
 tags:
   - site
 layout: layouts/post.njk

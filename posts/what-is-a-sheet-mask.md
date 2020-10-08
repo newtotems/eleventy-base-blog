@@ -2,7 +2,7 @@
 title: What is a sheet mask?
 description: Sheet masks have exploded in popularity recently but what are they, how do they work and what sheet mask is best?
 date: 2020-10-01
-limage: img/holding-a-sheet-mask.jpg
+limage: /img/holding-a-sheet-mask.jpg
 tags:
   - sheet-masks
 layout: layouts/post.njk
