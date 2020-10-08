@@ -139,4 +139,11 @@ header {
 .callout {
     background-image: url(https://www.thefacepack.com/fp__img/face-bg.jpg);
     background-size: cover;
+    background-position: 0 -210px;
+    padding: 1rem 0;
+    ;
+}
+
+.fb_iframe_widget {
+    margin: 10px 0;
 }
