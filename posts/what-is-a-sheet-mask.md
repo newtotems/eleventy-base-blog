@@ -10,6 +10,8 @@ layout: layouts/post.njk
 
 ![What are sheet masks? A person holds a sheet mask](../../img/holding-a-sheet-mask.jpg)
 
+<h1>{{ title }}</h1>
+
 <em>Sheet masks have exploded in popularity recently but what are they, how do they work and what sheet mask is best?</em>
 
 ## What is a sheet mask?
