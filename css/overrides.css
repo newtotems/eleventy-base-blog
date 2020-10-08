@@ -106,6 +106,10 @@ header {
 
 .tmpl-post h1 {
     font-family: 'wc_mano_negra_btabold';
+    font-size: 5rem;
+}
+
+.tmpl-post h1.display-4 {
     font-size: 4rem;
 }
 
@@ -126,4 +130,9 @@ header {
 .tmpl-post .direct-link {
     vertical-align: super;
     font-size: 1rem;
+}
+
+.callout {
+    background-image: url(https://www.thefacepack.com/fp__img/face-bg.jpg);
+    background-size: cover;
 }

@@ -29,7 +29,7 @@ Sheet masks are easy to use - simply take the mask out of the pack, place over a
 ## How often can I use a sheet mask?
 You can use sheet masks as often as you like. If you are a member of [The Face Pack](https://www.thefacepack.com/) then you have the option of receiving masks to use once a week (The Fantastic Four subscription), twice a week (The Excellent Eight subscription) or three times a week (The Terrific Twelve subscription)
 
-## What do Sheet Masks do for skin?
+## What do sheet masks do for skin?
 Sheet masks are infused with serum and depending on the mask and brand the different active ingredients can have many effects such as brightening, moisturising and soothing.
 
 ## Where do sheet masks come from?
