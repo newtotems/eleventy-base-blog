@@ -1,3 +1,5 @@
+{% set website-root = "https://www.thefacepack.com" %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -104,8 +106,8 @@
       <div class="col-md-6 mt-md-0 mt-3">
 
         <!-- Content -->
-        <h5 class="text-uppercase">Footer Content</h5>
-        <p>Here you can use rows and columns to organize your footer content.</p>
+        <h5 class="text-uppercase">Want to keep up tp date?</h5>
+        <p>Enter your email</p>
 
       </div>
       <!-- Grid column -->
@@ -120,16 +122,19 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="{{website-root}}">Home</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="{{website-root}}/subscribe">Subscribe</a>
+          </li>
+                    <li>
+            <a href="https://blog.thefacepack.com">Blog</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a href="{{website-root}}/privacy">Privacy &amp; Cookies</a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
+            <a href="{{website-root}}/terms">Terms &amp; Conditions</a>
           </li>
         </ul>
 
@@ -167,9 +172,7 @@
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-  </div>
+  <div class="footer-copyright text-center py-3">© 2020 The Face Pack</div>
   <!-- Copyright -->
 
 </footer>
