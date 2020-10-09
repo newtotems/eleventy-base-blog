@@ -1,6 +1,7 @@
 <section class="posts row justify-content-center text-center">
 <ol reversed class="postlist row justify-content-center text-center" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
 {% for post in postslist | reverse %}
+{% if not "pack" in post.data.tags %}
   <li class="col-md-4 flex-grow-1">
 <div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %} ">
     {%- if post.data.limage -%}
@@ -26,6 +27,7 @@
      </p>
     </div>
   </li>
+  {% endif %}
 {% endfor %}
 </ol>
 </section>
