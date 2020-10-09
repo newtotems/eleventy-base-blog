@@ -10,7 +10,10 @@ templateClass: tmpl-post
 
 {% include "callout.njk" %}
 
-<div class="fb-share-button" data-href="{{ post.url | url }}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | url }}" class="fb-xfbml-parse-ignore">Share</a></div>
+{{collections | dump}}
+{{collections | log}}
+
+<div class="fb-share-button" data-href="{{ collections.posts.post.url | url }}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | url }}" class="fb-xfbml-parse-ignore">Share</a></div>
 
 <ul>
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
@@ -19,6 +22,6 @@ templateClass: tmpl-post
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 </ul>
 
-{% set posturl = post.url %}
+{% set posturl = collections.posts.post.url %}
 
 {{posturl | replace('/posts/packs/','') | replace('/','')}}
