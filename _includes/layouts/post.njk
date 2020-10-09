@@ -15,7 +15,7 @@ templateClass: tmpl-post
 {% set packid = page.filePathStem | replace ("/posts/packs/","") %}
 
 {% for item in packages %}
-  +
+  {{item.customer}}
 {% endfor %}
 
 <ul>
