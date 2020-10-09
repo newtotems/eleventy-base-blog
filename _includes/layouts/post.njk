@@ -15,7 +15,7 @@ templateClass: tmpl-post
 <p>aaaaaaaaaa</p>
 {{ page.filePathStem | replace ("/posts/packs/","")}}
 
-{{packs}}
+{{packs | string }}
 
 <ul>
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
