@@ -20,5 +20,5 @@ templateClass: tmpl-post
 </ul>
 
 {%- for post in collections.post -%}
- {{ post.data | dump }}
+ {{ post.url }}
 {%- endfor -%}
