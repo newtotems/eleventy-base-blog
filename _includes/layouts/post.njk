@@ -14,10 +14,10 @@ templateClass: tmpl-post
 
 <p>aaaaaaaaaa</p>
 {% set packid =  page.filePathStem | replace ("/posts/packs/","") %}
-
+{%  set theid = packs.packid %}
 {{packid}}
 
-{% for animal in packs.packid -%}
+{% for animal in theid -%}
     <li>{{ animal }}</li>
 {% endfor -%}
 
