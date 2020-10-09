@@ -14,7 +14,7 @@
     <p>
     {% for tag in post.data.tags %}
       {%- if collections.tagList.indexOf(tag) != -1 -%}
-      {% if tag === "packs" %}
+      {% if tag === "pack" %}
       
       {% else %}
       {% set tagUrl %}/tags/{{ tag }}/{% endset %}
