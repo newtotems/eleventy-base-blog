@@ -16,6 +16,14 @@ templateClass: tmpl-post
 {% endif %}
 {% endfor %}
 
-  {{item.customer}}
+{% for unit in stock %}
+    {% for mask in item.contents %}
+        {% if unit.stockid == mask %}
+            {{unit.name}} - {{unit.description}}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+
   {% endif %}
 {% endfor %}

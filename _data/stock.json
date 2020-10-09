@@ -1,0 +1,22 @@
+[{
+        "stockid": 100,
+        "name": "mask 1",
+        "description": "mask 1 description"
+    },
+    {
+        "stockid": 500,
+        "name": "mask 2",
+        "description": "mask 2 description"
+    },
+    {
+        "stockid": 300,
+        "name": "mask 3",
+        "description": "mask 3 description"
+    },
+    {
+        "stockid": 212,
+        "name": "mask 4",
+        "description": "mask 4 description"
+    }
+
+]
