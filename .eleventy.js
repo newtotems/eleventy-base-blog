@@ -33,6 +33,11 @@ module.exports = function(eleventyConfig) {
         return array.slice(0, n);
     });
 
+    // add logging
+    eleventyConfig.addFilter('log', value => {
+        console.log(value)
+    });
+
     eleventyConfig.addCollection("tagList", function(collection) {
         let tagSet = new Set();
         collection.getAll().forEach(function(item) {
@@ -125,7 +130,3 @@ module.exports = function(eleventyConfig) {
         }
     };
 };
-
-eleventyConfig.addFilter('log', value => {
-    console.log(value)
-})
