@@ -1,0 +1,31 @@
+[{
+        "packageid": 1234,
+        "customer": 999,
+        "contents": [
+            100,
+            500,
+            300,
+            212
+        ]
+    },
+    {
+        "packageid": 33345,
+        "customer": 223,
+        "contents": [
+            432,
+            678,
+            432,
+            844
+        ]
+    },
+    {
+        "packageid": 4674,
+        "customer": 356,
+        "contents": [
+            2644,
+            246,
+            246,
+            742
+        ]
+    }
+]
