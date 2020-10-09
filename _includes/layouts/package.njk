@@ -9,6 +9,13 @@ templateClass: tmpl-post
 
 {% for item in packages %}
 {% if item.packageid == packid %}
+
+{% for customer in customers %}
+{% if customer.customerid == item.customer%}
+    {{customer.firstname}} {{customer.lastname}}
+{% endif %}
+{% endfor %}
+
   {{item.customer}}
   {% endif %}
 {% endfor %}

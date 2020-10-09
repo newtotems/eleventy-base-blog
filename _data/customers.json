@@ -1,0 +1,16 @@
+[{
+        "customerid": 999,
+        "firstname": "David",
+        "lastname": "Hogg"
+    },
+    {
+        "customerid": 223,
+        "firstname": "Testy",
+        "lastname": "Testerson"
+    },
+    {
+        "customerid": 356,
+        "firstname": "Terrence",
+        "lastname": "Est"
+    }
+]
