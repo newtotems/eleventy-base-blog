@@ -1,11 +1,15 @@
 {
-    "packs": [{
-            "packid": 123
-
-        },
-        {
-            "packid": 234
-
-        }
+    "big": [
+        "lion",
+        "zebra",
+        "wolf",
+        "dog",
+        "gorilla",
+        "tapir"
+    ],
+    "small": [
+        "cat",
+        "rabbit",
+        "mouse"
     ]
 }

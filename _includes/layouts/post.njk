@@ -15,9 +15,9 @@ templateClass: tmpl-post
 <p>aaaaaaaaaa</p>
 {{ page.filePathStem | replace ("/posts/packs/","")}}
 
-{{{%- for pack in packs -%}
-{{pack.packid}}
-{%- endfor -%}}}
+{% for animal in packs.big -%}
+    <li>{{ animal }}</li>
+{% endfor -%}
 
 <ul>
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
