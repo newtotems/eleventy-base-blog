@@ -13,9 +13,11 @@ templateClass: tmpl-post
 <div class="fb-share-button" data-href="{{ post.url | url }}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | url }}" class="fb-xfbml-parse-ignore">Share</a></div>
 
 <p>aaaaaaaaaa</p>
-{% set id =  page.filePathStem | replace ("/posts/packs/","") %}
+{% set packid =  page.filePathStem | replace ("/posts/packs/","") %}
+{%  set theid = "packs." + packid %}
+{{packid}}
 
-{% for animal in packs.id -%}
+{% for animal in theid -%}
     <li>{{ animal }}</li>
 {% endfor -%}
 

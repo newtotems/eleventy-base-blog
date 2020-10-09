@@ -1,15 +1,8 @@
 {
-    "1234": [
-        "lion",
-        "zebra",
-        "wolf",
-        "dog",
-        "gorilla",
-        "tapir"
-    ],
-    "4567": [
-        "cat",
-        "rabbit",
-        "mouse"
+    "customer": 999,
+    "contents": [
+        888,
+        777,
+        555
     ]
 }
