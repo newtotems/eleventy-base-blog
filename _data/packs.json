@@ -1,4 +1,11 @@
 {
-    "packid": 1234,
-    "customerid": 30
+    "packs": [{
+            "packid": 123,
+
+        },
+        {
+            "packid": 234,
+
+        }
+    ]
 }
