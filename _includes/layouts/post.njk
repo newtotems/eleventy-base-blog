@@ -14,7 +14,7 @@ templateClass: tmpl-post
 
 {% set packid =  page.filePathStem | replace ("/posts/packs/","") | int %}
 
-{% set p = packs + "." + packid %}
+{% set p = packs + "." + page.filePathStem | replace ("/posts/packs/","") | int %}
 
 {% for pack in p -%}
     {{ pack }}
