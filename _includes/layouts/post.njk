@@ -15,7 +15,7 @@ templateClass: tmpl-post
 {% set packid = page.filePathStem | replace ("/posts/packs/","") %}
 
 {% for key, item in packs%}
-  <option>{{ item }}</option>
+  <option>{{ item.customer }}</option>
 {% endfor %}
 
 <ul>
