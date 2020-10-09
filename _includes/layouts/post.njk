@@ -15,9 +15,9 @@ templateClass: tmpl-post
 {% set currentpack = page.filePathStem | replace ("/posts/packs/","") %}
 
 {% for key, item in packs %}
-  {% if item.pid === currentpack %}
+ 
     {{ item.customer }}
-  {% endif %}
+  
 {% endfor %}
 
 <ul>
