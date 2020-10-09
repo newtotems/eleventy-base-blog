@@ -19,4 +19,6 @@ templateClass: tmpl-post
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 </ul>
 
-{{post.url | replace('/posts/packs/','') | replace('/','')}}
+{% set posturl = post.url %}
+
+{{posturl | replace('/posts/packs/','') | replace('/','')}}
