@@ -18,9 +18,3 @@ templateClass: tmpl-post
   {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 </ul>
-
-{{ collections.posts | dump }}
-
-<!--
-{{posturl | replace('/posts/packs/','') | replace('/','')}}
--->
