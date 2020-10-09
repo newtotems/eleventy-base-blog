@@ -14,7 +14,9 @@ templateClass: tmpl-post
 
 {% set packid = page.filePathStem | replace ("/posts/packs/","") %}
 
-{{packs}}
+{% for key, item in packs%}
+  <option>{{ item }}</option>
+{% endfor %}
 
 <ul>
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
