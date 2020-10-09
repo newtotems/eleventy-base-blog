@@ -19,5 +19,4 @@ templateClass: tmpl-post
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 </ul>
 
-{%- set posts = collections.posts  %}
-{{ posts | log }}
+{{ collections.posts | dump }}
