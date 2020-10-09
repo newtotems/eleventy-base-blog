@@ -17,9 +17,7 @@ templateClass: tmpl-post
 {% set p = "packs." + packid %}
 
 {% for pack in p -%}
-<p>packs  exists</p>
-    <p>packid exists</p>
-    {{ pack.customer }}
+    {{ pack }}
 {% endfor -%}
 
 <ul>
