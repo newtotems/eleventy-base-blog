@@ -19,12 +19,10 @@ templateClass: tmpl-post
 <p>packid is {{packid}}</p>
 <p>theid is {{packid}}</p>
 
-{% for pack in packs -%}
-<p>packs exists</p>
-    {% if pack === packid %}
+{% for pack in packs.theid -%}
+<p>packs  exists</p>
     <p>packid exists</p>
     {{ pack.customer }}
-    {% endif %}}
 {% endfor -%}
 
 <ul>
