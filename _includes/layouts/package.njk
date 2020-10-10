@@ -12,7 +12,7 @@ templateClass: tmpl-post
 
 {% for customer in customers %}
 {% if customer.customerid == item.customer%}
-    <h1>Here's whats in your Face Pack this month, {{customer.firstname}} {{customer.lastname}}</h1>
+    <h1>Here's whats in your Face Pack this month, {{customer.firstname}}</h1>
 {% endif %}
 {% endfor %}
 
@@ -23,7 +23,8 @@ templateClass: tmpl-post
 
 <div class="col-4"></div>
     <div class="col-8">
-            {{unit.name}} - {{unit.description}}
+            <h2>{{unit.name}}</h2>
+            <p>{{unit.description}}</p>
             </div>
         {% endif %}
     {% endfor %}
