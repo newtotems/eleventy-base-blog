@@ -12,18 +12,23 @@ templateClass: tmpl-post
 
 {% for customer in customers %}
 {% if customer.customerid == item.customer%}
-    {{customer.firstname}} {{customer.lastname}}
+    <h1>Here's whats in your Face Pack this month, {{customer.firstname}} {{customer.lastname}}</h1>
 {% endif %}
 {% endfor %}
 
+<section class="row">
 {% for unit in stock %}
     {% for mask in item.contents %}
-        {% if unit.stockid == mask %}
+       {% if unit.stockid == mask %}
+
+<div class="col-4"></div>
+    <div class="col-8">
             {{unit.name}} - {{unit.description}}
+            </div>
         {% endif %}
     {% endfor %}
 {% endfor %}
-
+</section>
 
   {% endif %}
 {% endfor %}
