@@ -5,11 +5,17 @@ eleventyNavigation:
   order: 1
 ---
 
-
 {% include "homepage.njk" %}
 
-{% set postslist = collections.posts | head(-20) %}
+{% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
+<div class="row justify-content-center">
+  <div class="col-6">
+    <h4>Latest Blog Posts</h4>
+    {% include "postslist.njk" %}
+  </div>
+</div>
 
-<p><a href="{{ '/posts/' | url }}" class="btn">View all posts</a></p>
+<p>
+  <a href="{{ '/posts/' | url }}" class="btn">View all posts</a>
+</p>
