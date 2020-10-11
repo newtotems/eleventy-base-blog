@@ -7,6 +7,8 @@ templateClass: tmpl-post
 
 {% set packid = page.filePathStem | replace ("/packs/","") %}
 
+{{packid}}
+
 {% for item in packages %}
 {% if item.packageid == packid %}
 
