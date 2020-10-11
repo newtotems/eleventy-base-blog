@@ -97,3 +97,181 @@
                 .insertBefore(m, p)
         }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/dba9a1307df4f5c2423f11fd8/e92dee64e6c098f45e9211035.js");
     </script>
+
+    <div id="cookieconsent" class="row">
+        <div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override--1172037365 col-12 row cc-invisible">
+            <!--googleoff: all-->
+            <div id="cookieconsent:desc" class="cc-message col-10 text-left">This website uses cookies -
+                <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.cookiesandyou.com" rel="noopener noreferrer nofollow" target="_blank">info</a>
+            </div>
+            <div class="cc-compliance col-2 text-right">
+                <a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">OK</a>
+            </div>
+            <!--googleon: all-->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+
+            $('#cookieconsent').hide();
+            if ($.cookie('whenToShowDialog') == null) {
+                $.cookie('whenToShowDialog', 'yes', {
+                    expires: 60,
+                    path: '/'
+                });
+                $('#cookieconsent').show();
+            }
+        });
+    </script>
+ 
+    <script>
+        $(document).ready(function() {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    </script>
+
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '{your-app-id}',
+                cookie: true,
+                xfbml: true,
+                version: '{api-version}'
+            });
+
+            FB
+                .AppEvents
+                .logPageView();
+
+        };
+
+        (function(d, s, id) {
+            var js,
+                fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs
+                .parentNode
+                .insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script>
+        (function() {
+            var stripe = Stripe('pk_live_51HUpCrCazeDg6hkd0SO3AKqg9KHrV1SmLforiwYhAZHhohRB9dvt1CU4V2bDT3ALQfUrBHKMqLdO0vwsNn5GbQiO00jwsdn2kl');
+            var checkoutButton = document.getElementById('checkout-button-price_1HUpuiCazeDg6hkd6tioVtqF');
+            checkoutButton.addEventListener('click', function() {
+                stripe
+                    .redirectToCheckout({
+                        lineItems: [{
+                            price: 'price_1HUpuiCazeDg6hkd6tioVtqF',
+                            quantity: 1
+                        }],
+                        mode: 'subscription',
+                        successUrl: window.location.protocol + '//www.thefacepack.com/success',
+                        cancelUrl: window.location.protocol + '//www.thefacepack.com/',
+                        billingAddressCollection: 'required',
+                        shippingAddressCollection: {
+                            allowedCountries: ['GB']
+                        }
+                    })
+                    .then(function(result) {
+                        if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                        }
+                    });
+            });
+        })();
+    </script>
+
+    <script>
+        (function() {
+            var stripe = Stripe('pk_live_51HUpCrCazeDg6hkd0SO3AKqg9KHrV1SmLforiwYhAZHhohRB9dvt1CU4V2bDT3ALQfUrBHKMqLdO0vwsNn5GbQiO00jwsdn2kl');
+
+            var checkoutButton_1 = document.getElementById('checkout-button-price_1HUptdCazeDg6hkd2trImC87');
+            checkoutButton_1.addEventListener('click', function() {
+                stripe
+                    .redirectToCheckout({
+                        lineItems: [{
+                            price: 'price_1HUptdCazeDg6hkd2trImC87',
+                            quantity: 1
+                        }],
+                        mode: 'subscription',
+                        successUrl: window.location.protocol + '//www.thefacepack.com/success',
+                        cancelUrl: window.location.protocol + '//www.thefacepack.com/',
+                        billingAddressCollection: 'required',
+                        shippingAddressCollection: {
+                            allowedCountries: ['GB']
+                        }
+                    })
+                    .then(function(result) {
+                        if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                        }
+                    });
+            });
+        })();
+    </script>
+
+    <script>
+        (function() {
+            var stripe = Stripe('pk_live_51HUpCrCazeDg6hkd0SO3AKqg9KHrV1SmLforiwYhAZHhohRB9dvt1CU4V2bDT3ALQfUrBHKMqLdO0vwsNn5GbQiO00jwsdn2kl');
+
+            var checkoutButton_2 = document.getElementById('checkout-button-price_1HUpsQCazeDg6hkdVhGZ4b9l');
+            checkoutButton_2.addEventListener('click', function() {
+                stripe
+                    .redirectToCheckout({
+                        lineItems: [{
+                            price: 'price_1HUpsQCazeDg6hkdVhGZ4b9l',
+                            quantity: 1
+                        }],
+                        mode: 'subscription',
+                        successUrl: window.location.protocol + '//www.thefacepack.com/success',
+                        cancelUrl: window.location.protocol + '//www.thefacepack.com/',
+                        billingAddressCollection: 'required',
+                        shippingAddressCollection: {
+                            allowedCountries: ['GB']
+                        }
+                    })
+                    .then(function(result) {
+                        if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                        }
+                    });
+            });
+        })();
+    </script>
