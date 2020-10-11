@@ -79,13 +79,13 @@
 
 <body class="">
 
-    {% include '/layouts/header.njk' %}  
+    {% include 'header.njk' %}  
   
                       <main {% if templateclass %} class="{{ templateClass }}" {% endif %}>
                         {{ content | safe }}
                     </main>
 
-         {% include '/layouts/footer.njk' %}          
+         {% include 'footer.njk' %}          
 
     </body>
 </html>
