@@ -7,15 +7,12 @@ templateClass: tmpl-post
 
 {% set packid = page.filePathStem | replace ("/packs/","") %}
 
-{{packid}}
-
 {% for item in packages %}
 {% if item.packageid == packid %}
 
 {% for customer in customers %}
 {% if customer.customerid == item.customer%}
     <h1>Here's whats in this month's pack, {{customer.firstname}}</h1>
-    {% else %}
 {% endif %}
 {% endfor %}
 
