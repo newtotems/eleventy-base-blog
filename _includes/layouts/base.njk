@@ -1,8 +1,6 @@
-{% set websiteroot = 'https://www.thefacepack.com' %}
-
 <!DOCTYPE html>
 <html lang="en">
-
+{% set websiteroot = 'https://www.thefacepack.com' %}
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177000090-2"></script>
     <script>
@@ -79,13 +77,13 @@
 
 <body class="">
 
-    {% include 'header.njk' %}  
+  <!--  {% include 'header.njk' %}  -->
   
                       <main {% if templateclass %} class="{{ templateClass }}" {% endif %}>
                         {{ content | safe }}
                     </main>
 
-         {% include 'footer.njk' %}          
+    <!--     {% include 'footer.njk' %}          -->
 
     </body>
 </html>
