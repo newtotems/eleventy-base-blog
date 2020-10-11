@@ -5,7 +5,7 @@ templateClass: tmpl-post
 
 {{ content | safe }}
 
-{% set packid = page.filePathStem | replace ("/posts/packs/","") %}
+{% set packid = page.filePathStem | replace ("/packs/","") %}
 
 {% for item in packages %}
 {% if item.packageid == packid %}
