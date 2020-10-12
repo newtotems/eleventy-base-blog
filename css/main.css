@@ -786,10 +786,24 @@ a.postlist-link {
     display: block;
 }
 
+.blog-post h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 2.8rem;
+}
+
 .blog-post h2 {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+.blog-post em {
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    display: block;
 }
 
 .blog-post .direct-link {
