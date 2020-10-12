@@ -237,10 +237,6 @@ h4 {
     text-decoration: underline;
 }
 
-.fp__tab-content p {
-    margin-bottom: 1.3rem;
-}
-
 .fp__tabs strong,
 .fp__tab-content strong {
     display: block;
