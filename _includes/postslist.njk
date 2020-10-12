@@ -1,25 +1,41 @@
-<section class="posts row justify-content-center text-center">
-<ol reversed class="postlist row justify-content-center text-center" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
-{% for post in postslist | reverse %}
-{% if not "pack" in post.data.tags %}
-  <li class="col-md-4 flex-grow-1">
-<div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %} ">
-    {%- if post.data.limage -%}
-    <div class="postlist-imgwrap">
-      <a href="{{ post.url | url }}"><img src="{{post.data.limage}}" class="post-leadimage"></a>
-      </div>
-    {%- endif -%}
+{% set postslist = collections.posts | head(-3) %}
+{% set postslistCounter = collections.posts | length %}
 
-    <a href="{{ post.url | url }}" class="postlist-link">
-    {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
-    </a>
-        <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-     <p class="postlist-description">
-     {{ post.data.description }}
-     </p>
-    </div>
-  </li>
-  {% endif %}
-{% endfor %}
-</ol>
-</section>
+<div class="row justify-content-center">
+  <div class="col-lg-6">
+    <h6>Latest Blog Posts</h6>
+    <p class="h6-sub">
+      <a href="{{ '/posts/' | url }}">View all posts</a>
+    </p>
+
+    <section class="posts row justify-content-center text-center">
+      <ol reversed="reversed" class="postlist row justify-content-center text-center" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+        {% for post in postslist | reverse %}
+          {% if not "pack" in post.data.tags %}
+            <li class="col-md-4 flex-grow-1">
+              <div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %} ">
+                {%- if post.data.limage -%}
+                  <div class="postlist-imgwrap">
+                    <a href="{{ post.url | url }}"><img src="{{post.data.limage}}" class="post-leadimage"></a>
+                  </div>
+                {%- endif -%}
+
+                <a href="{{ post.url | url }}" class="postlist-link">
+                  {% if post.data.title %}{{ post.data.title }}
+                  {% else %}
+                    <code>{{ post.url }}</code>
+                  {% endif %}
+                </a>
+                <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                <p class="postlist-description">
+                  {{ post.data.description }}
+                </p>
+              </div>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+
+  </div>
+</div>
