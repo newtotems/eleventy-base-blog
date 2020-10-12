@@ -759,6 +759,22 @@ h4 {
     max-width: 100%
 }
 
+.postlist-item time {
+    display: block;
+    color: #8e8e8e;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+a.postlist-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 1rem 0 0;
+    display: block;
+    color: #0a1f2d;
+}
+
 #menuToggle a {
     text-decoration: none;
     color: #fff;

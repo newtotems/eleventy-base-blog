@@ -22,8 +22,8 @@
       {%- endif -%}
       {%- endif -%}
     {% endfor %}
-    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-    </p>
+        </p>
+        <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
      <p>
      <a href="{{ post.url | url }}">
      {{ post.data.description }}
