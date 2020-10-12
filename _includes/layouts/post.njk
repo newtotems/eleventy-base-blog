@@ -7,11 +7,11 @@ templateClass: tmpl-post
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v8.0&appId=628841017828335&autoLogAppEvents=1" nonce="XSVzidHA"></script>
 
 <article class="row justify-content-center">
-<div class="blog-post col-lg-5">
+<div class="blog-post col-lg-5 pt-4 mt-4">
 {{ content | safe }}
 <div class="fb-share-button" data-href="{{ post.url | url }}" data-layout="button_count" data-size="large"> <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | url }}" class="fb-xfbml-parse-ignore">Share</a></div>
 
-<ul>
+<ul>  
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
   {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
   {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
