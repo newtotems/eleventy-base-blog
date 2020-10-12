@@ -917,6 +917,17 @@ a.postlist-link {
     font-size: 1.2rem;
 }
 
+#accordion .card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: -2px;
+    background-color: rgba(0, 0, 0, .03);
+    border-bottom: 0;
+}
+
+#accordion .card-header:first-child {
+    border-radius: 0;
+}
+
 
 /* Slider */
 
