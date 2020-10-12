@@ -24,10 +24,8 @@
     {% endfor %}
         </p>
         <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-     <p>
-     <a href="{{ post.url | url }}">
+     <p class="postlist-description">
      {{ post.data.description }}
-     </a>
      </p>
     </div>
   </li>
