@@ -9,7 +9,7 @@ templateClass: tmpl-post
 <article class="row justify-content-center">
 <div class="blog-post col-lg-5">
 {{ content | safe }}
-<div class="fb-share-button" data-href="{{ post.url | url }}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | url }}" class="fb-xfbml-parse-ignore">Share</a></div>
+<div class="fb-share-button" data-href="{{ post.url | url }}" data-layout="button_count" data-size="large"> <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | url }}" class="fb-xfbml-parse-ignore">Share</a></div>
 
 <ul>
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}

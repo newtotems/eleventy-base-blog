@@ -8,7 +8,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-![What are sheet masks? A person holds a sheet mask](../../img/holding-a-sheet-mask.jpg)
+![What are sheet masks? A person holds a sheet mask](../../img/holding-a-sheet-mask.jpg#img-header)
 
 <h1 class="mt-4 mb-1">{{ title }}</h1>
 
