@@ -26,6 +26,10 @@ h6 {
     font-weight: 400;
 }
 
+footer {
+    background: #fff;
+}
+
 h6 {
     text-transform: uppercase;
     text-align: center;
