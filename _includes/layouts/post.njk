@@ -9,20 +9,7 @@ templateClass: tmpl-post
 <article class="row justify-content-center text-center fp__header">
 <div class="blog-post col-lg-6">
 {{ content | safe }}
-</div>
-</article>
-
-{% include "callout.njk" %}
-
 <div class="fb-share-button" data-href="{{ post.url | url }}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | url }}" class="fb-xfbml-parse-ignore">Share</a></div>
-
-{% set packid = page.filePathStem | replace ("/posts/packs/","") %}
-
-{% for item in packages %}
-{% if item.packageid == packid %}
-  {{item.customer}}
-  {% endif %}
-{% endfor %}
 
 <ul>
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
@@ -31,6 +18,7 @@ templateClass: tmpl-post
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 </ul>
 
-{%- for post in collections.post -%}
- {{ post.url }}
-{%- endfor -%}
+</div>
+</article>
+
+{% include "callout.njk" %}
