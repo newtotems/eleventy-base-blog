@@ -792,6 +792,10 @@ a.postlist-link {
     font-weight: 600;
 }
 
+.blog-post .direct-link {
+    display: none;
+}
+
 #menuToggle a {
     text-decoration: none;
     color: #fff;
