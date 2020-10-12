@@ -767,12 +767,17 @@ h4 {
     letter-spacing: .5px;
 }
 
+.postlist-description {
+    line-height: 1.2;
+    font-size: 1.4rem;
+    margin: .5rem 0 0
+}
+
 a.postlist-link {
     text-transform: uppercase;
     font-weight: 600;
     margin: 1rem 0 0;
     display: block;
-    color: #0a1f2d;
 }
 
 #menuToggle a {
