@@ -786,6 +786,12 @@ a.postlist-link {
     display: block;
 }
 
+.blog-post h2 {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
 #menuToggle a {
     text-decoration: none;
     color: #fff;
