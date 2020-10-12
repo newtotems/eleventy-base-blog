@@ -61,6 +61,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Kumbh Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 a {
