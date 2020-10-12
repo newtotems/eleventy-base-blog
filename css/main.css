@@ -786,6 +786,10 @@ a.postlist-link {
     display: block;
 }
 
+img[src$='#img-header'] {
+    width: 100%;
+}
+
 .blog-post h1 {
     text-transform: uppercase;
     font-weight: 600;
