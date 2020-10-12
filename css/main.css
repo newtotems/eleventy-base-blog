@@ -906,12 +906,12 @@ a.postlist-link {
     transform: none;
 }
 
-
-/*
-* {
-    outline: 1px solid red!important;
+#accordion {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
 }
-*/
 
 
 /* Slider */
