@@ -746,6 +746,15 @@ h4 {
     z-index: 2;
 }
 
+.free-shipping {
+    background: #ec4471;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 2px 0;
+    margin-bottom: 5px;
+}
+
 #menuToggle {
     display: inline-block;
     position: relative;
