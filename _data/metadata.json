@@ -1,20 +1,20 @@
 {
-  "title": "The Face Pack Blog",
-  "url": "https://blog.thefacepack.com/",
-  "description": "A blog about face packs",
-  "feed": {
-    "subtitle": "A blog about face packs",
-    "filename": "feed.xml",
-    "path": "/feed/feed.xml",
-    "id": "https://blog.thefacepack.com/"
-  },
-  "jsonfeed": {
-    "path": "/feed/feed.json",
-    "url": "https://blog.thefacepack.com/feed/feed.json"
-  },
-  "author": {
-    "name": "The Face Pack",
-    "email": "hi@thefacepack.com",
-    "url": "https://www.thefacepack.com/"
-  }
+    "title": "The Face Pack",
+    "url": "https://www.thefacepack.com/",
+    "description": "The best sheet, rinse and peel beauty facial masks from around the world delivered monthly to your door - join the ultimate face mask subscription club",
+    "feed": {
+        "subtitle": "The Face Pack",
+        "filename": "feed.xml",
+        "path": "/feed/feed.xml",
+        "id": "https://www.thefacepack.com/"
+    },
+    "jsonfeed": {
+        "path": "/feed/feed.json",
+        "url": "https://www.thefacepack.com/feed/feed.json"
+    },
+    "author": {
+        "name": "The Face Pack",
+        "email": "hi@thefacepack.com",
+        "url": "https://www.thefacepack.com/"
+    }
 }
