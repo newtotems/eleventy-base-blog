@@ -1,4 +1,5 @@
 <div class="d-none d-print-block label">
             <h1 class="row">Thanks for being a member of The Face Pack, {{fname}}!</h1>
     {{ content | safe }}
+    {% include "qrcode.njk" %}
 </div>
