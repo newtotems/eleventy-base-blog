@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
-<div class="d-print-block">{{ content | safe }}</div>
+{% include "layouts/label.njk" %}
 
 {% set packid = page.filePathStem | replace ("/packs/","") %}
 
