@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
-{{ content | safe }}
+<div class="d-print-block">{{ content | safe }}</div>
 
 {% set packid = page.filePathStem | replace ("/packs/","") %}
 
@@ -16,7 +16,7 @@ templateClass: tmpl-post
 {% endif %}
 {% endfor %}
 
-<section class="row">
+<section class="row d-print-none">
 {% for unit in stock %}
     {% for mask in item.contents %}
        {% if unit.stockid == mask %}
