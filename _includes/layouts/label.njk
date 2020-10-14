@@ -1,3 +1,9 @@
-<h1>Thanks</h1>
+<div class="d-print-block label">
+    {% for customer in customers %}
+        {% if customer.customerid == item.customer%}
+            <h1 class="row d-print-none">Enjoy this month's pack, {{customer.firstname}}</h1>
+        {% endif %}
+    {% endfor %}
 
-<div class="d-print-block">{{ content | safe }}</div>
+    {{ content | safe }}
+</div>

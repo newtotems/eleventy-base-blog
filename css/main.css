@@ -829,6 +829,10 @@ img[src$='#img-header'] {
     border: 1px solid black;
 }
 
+.label h1 {
+    font-family: 'wc_mano_negra_btabold';
+}
+
 #menuToggle a {
     text-decoration: none;
     color: #fff;
