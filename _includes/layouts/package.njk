@@ -3,11 +3,16 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
+{% set packid = page.filePathStem | replace ("/packs/","") %}
+
+{% for item in packages %}
+{% if item.packageid == packid %}
+
 {% for customer in customers %}
 {% if customer.customerid == item.customer%}
 {% set fname = customer.firstname %}
-    <h1 class="row d-print-none">Here's whats in your pack this month, {{fname}}</h1>
-    <p>Remember, each pack is unique.</p>
+    <h1 class="row d-print-none text-center">Here's whats in your pack this month, {{fname}}</h1>
+    <p class="text-center">Remember, each pack is unique.</p>
 
 {% include "layouts/label.njk" %}
 
@@ -15,12 +20,7 @@ templateClass: tmpl-post
 {% endfor %}
 
 <section class="row blog-post justify-content-center d-print-none">
-
     <div class="col-lg-5 pt-4 mt-4 row">
-{% set packid = page.filePathStem | replace ("/packs/","") %}
-
-{% for item in packages %}
-{% if item.packageid == packid %}
 
 {% for unit in stock %}
     {% for mask in item.contents %}
