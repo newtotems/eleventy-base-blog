@@ -844,6 +844,14 @@ img[src$='#img-header'] {
     color: #ec4471;
 }
 
+.ambassadors h1 {
+    font-size: 4rem;
+}
+
+.ambassadors h2 {
+    font-size: 2rem;
+}
+
 .ambassadors h6 {
     color: #ec4471;
 }
