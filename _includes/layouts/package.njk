@@ -12,7 +12,8 @@ templateClass: tmpl-post
 {% for customer in customers %}
 {% if customer.customerid == item.customer%}
 {% set fname = customer.firstname %}
-    <h1 class="row d-print-none">Here's whats in this month's pack, {{fname}}</h1>
+    <h1 class="row d-print-none">Here's whats in your pack this month, {{fname}}</h1>
+    <p>Remember, each pack is unique to you</p>
 
 {% include "layouts/label.njk" %}
 
