@@ -838,6 +838,16 @@ img[src$='#img-header'] {
     letter-spacing: 2px;
 }
 
+.ambassadors h1,
+.ambassadors h2 {
+    font-family: 'wc_mano_negra_btabold';
+    color: #ec4471;
+}
+
+.ambassadors h6 {
+    color: #ec4471;
+}
+
 #menuToggle a {
     text-decoration: none;
     color: #fff;
