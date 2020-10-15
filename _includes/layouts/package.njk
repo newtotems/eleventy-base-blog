@@ -18,12 +18,14 @@ templateClass: tmpl-post
 {% endif %}
 {% endfor %}
 
-<section class="row d-print-none">
+<section class="row blog-post d-print-none">
 {% for unit in stock %}
     {% for mask in item.contents %}
        {% if unit.stockid == mask %}
 
-<div class="col-4"></div>
+<div class="col-4">
+    image
+</div>
     <div class="col-8 text-left">
             <h4>{{unit.name}}</h4>
             <p>{{unit.description}}</p>
