@@ -2,12 +2,6 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<section class="row blog-post justify-content-center d-print-none">
-    <div class="col-lg-5 pt-4 mt-4 row">
-{% set packid = page.filePathStem | replace ("/packs/","") %}
-
-{% for item in packages %}
-{% if item.packageid == packid %}
 
 {% for customer in customers %}
 {% if customer.customerid == item.customer%}
@@ -19,6 +13,14 @@ templateClass: tmpl-post
 
 {% endif %}
 {% endfor %}
+
+<section class="row blog-post justify-content-center d-print-none">
+
+    <div class="col-lg-5 pt-4 mt-4 row">
+{% set packid = page.filePathStem | replace ("/packs/","") %}
+
+{% for item in packages %}
+{% if item.packageid == packid %}
 
 {% for unit in stock %}
     {% for mask in item.contents %}
