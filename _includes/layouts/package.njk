@@ -11,16 +11,19 @@ templateClass: tmpl-post
 {% for customer in customers %}
 {% if customer.customerid == item.customer%}
 {% set fname = customer.firstname %}
+<section class="row blog-post justify-content-center d-print-none">
+    <div class="col-lg-6 pt-4 mt-4 row">
     <h1 class="row d-print-none text-center">Here's whats in your pack this month, {{fname}}</h1>
-    <p class="text-center">Remember, each pack is unique.</p>
-
+    <p class="d-print-none text-center">Remember, each pack is unique.</p>
+</div>
+</section>
 {% include "layouts/label.njk" %}
 
 {% endif %}
 {% endfor %}
 
 <section class="row blog-post justify-content-center d-print-none">
-    <div class="col-lg-5 pt-4 mt-4 row">
+    <div class="col-lg-5 row">
 
 {% for unit in stock %}
     {% for mask in item.contents %}
