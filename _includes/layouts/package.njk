@@ -2,8 +2,8 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<section class="row blog-post d-print-none">
-    <div class="col-lg-5 pt-4 mt-4">
+<section class="row blog-post justify-content-center d-print-none">
+    <div class="col-lg-5 pt-4 mt-4 row">
 {% set packid = page.filePathStem | replace ("/packs/","") %}
 
 {% for item in packages %}
