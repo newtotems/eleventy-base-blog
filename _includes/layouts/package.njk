@@ -3,45 +3,46 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
-{% set packid = page.filePathStem | replace ("/packs/","") %}
+{% set packid = page.filePathStem | replace("/packs/", "") %}
 
 {% for item in packages %}
-{% if item.packageid == packid %}
+    {% if item.packageid == packid %}
 
-{% for customer in customers %}
-{% if customer.customerid == item.customer%}
-{% set fname = customer.firstname %}
-<section class="row blog-post justify-content-center d-print-none">
-    <div class="col-lg-6 pt-4 mt-4 row">
-    <h1 class="row d-print-none text-center">Here's whats in your pack this month, {{fname}}</h1>
-    <p class="d-print-none text-center">Remember, each pack is unique.</p>
-</div>
-</section>
-{% include "layouts/label.njk" %}
+        {% for customer in customers %}
+            {% if customer.customerid == item.customer%}
+                {% set fname = customer.firstname %}
+                <section class="row blog-post justify-content-center d-print-none">
+                    <div class="col-lg-6 pt-4 mt-4 row">
+                        <h1 class="row d-print-none text-center">Here's whats in your pack this month,
+                            {{fname}}</h1>
+                        <p class="d-print-none text-center">Remember, each pack is unique.</p>
+                    </div>
+                </section>
+                {% include "layouts/label.njk" %}
 
-{% endif %}
-{% endfor %}
+            {% endif %}
+        {% endfor %}
 
-<section class="row blog-post justify-content-center d-print-none">
-    <div class="col-lg-5 row">
+        <section class="row blog-post justify-content-center d-print-none">
+            <div class="col-lg-5">
 
-{% for unit in stock %}
-    {% for mask in item.contents %}
-       {% if unit.stockid == mask %}
+                {% for unit in stock %}
+                    {% for mask in item.contents %}
+                        {% if unit.stockid == mask %}
+                            <div class="row pack-item">
+                                <div class="col-4">
+                                    image
+                                </div>
+                                <div class="col-8 text-left">
+                                    <h2>{{unit.name}}</h2>
+                                    <p>{{unit.description}}</p>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
 
-<div class="col-4">
-    image
-</div>
-    <div class="col-8 text-left">
-            <h2>{{unit.name}}</h2>
-            <p>{{unit.description}}</p>
+            {% endif %}
+        {% endfor %}
     </div>
-        {% endif %}
-    {% endfor %}
-{% endfor %}
-
-
-  {% endif %}
-{% endfor %}
-</div>
 </section>

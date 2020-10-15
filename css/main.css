@@ -107,6 +107,11 @@ a {
     text-decoration: underline;
 }
 
+.pack-item {
+    border-bottom: 1px solid #ced4da;
+    padding: 1rem;
+}
+
 .container {
     max-width: 100%;
 }
