@@ -851,6 +851,7 @@ img[src$='#img-header'] {
 
 .ambassadors h2 {
     font-size: 2rem;
+    margin: 20px 0 5px;
 }
 
 .ambassadors h6 {
