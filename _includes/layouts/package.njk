@@ -2,7 +2,8 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-
+<section class="row blog-post d-print-none">
+    <div class="col-lg-5 pt-4 mt-4">
 {% set packid = page.filePathStem | replace ("/packs/","") %}
 
 {% for item in packages %}
@@ -18,7 +19,6 @@ templateClass: tmpl-post
 {% endif %}
 {% endfor %}
 
-<section class="row blog-post d-print-none">
 {% for unit in stock %}
     {% for mask in item.contents %}
        {% if unit.stockid == mask %}
@@ -33,7 +33,9 @@ templateClass: tmpl-post
         {% endif %}
     {% endfor %}
 {% endfor %}
-</section>
+
 
   {% endif %}
 {% endfor %}
+</div>
+</section>
