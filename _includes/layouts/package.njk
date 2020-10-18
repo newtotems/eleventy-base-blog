@@ -28,7 +28,7 @@ templateClass: tmpl-post
 
                 {% for unit in stock %}
                     {% for mask in item.contents %}
-                        {% if unit.stockid == mask %}
+                        {% if unit.itemid == mask %}
                             <div class="row pack-item">
                                 <div class="col-4">
                                     image
