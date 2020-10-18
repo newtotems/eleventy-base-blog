@@ -53,5 +53,19 @@
         "url": "url",
         "cost": 0.90,
         "stock": 10
+    },
+    {
+        "itemid": 5,
+        "brandid": 2,
+        "name": "Manuka Honey Moisturizing And Nourishing Mask",
+        "description": "description 5",
+        "imgs": [
+            "/img/product_images/x5.jpg",
+            "/img/product_images/x5.jpg",
+            "/img/product_images/x5 .jpg"
+        ],
+        "url": "url",
+        "cost": 0.39,
+        "stock": 18
     }
 ]

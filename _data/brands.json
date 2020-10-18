@@ -1,9 +1,11 @@
 [{
         "id": 1,
-        "name": "Banobagi"
+        "name": "Banobagi",
+        "logo": "logo"
     },
     {
         "id": 2,
-        "name": "Bielenda"
+        "name": "Bielenda",
+        "logo": "logo"
     }
 ]
