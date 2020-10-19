@@ -1,25 +1,21 @@
-  ---
-  pagination:
-    data: collections
-    size: 1
-    alias: tag
-    filter:
-      - all
-      - nav
-      - post
-      - posts
-      - tagList
-    addAllPagesToCollections: true
-  layout: layouts/home.njk
-  eleventyComputed:
-    title: Tagged “{{ tag }}”
-  permalink: /tags/{{ tag }}/
-  ---
-  <div class="row justify-content-center">
-    <div class="col-lg-6">
-      <h1>Tagged “{{ tag }}”</h1>
-    </div>
-  </div>
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
+layout: layouts/home.njk
+eleventyComputed:
+  title: Tagged “{{ tag }}”
+permalink: /tags/{{ tag }}/
+---
+<h1>Tagged “{{ tag }}”</h1>
 
-  {% set postslist = collections[tag] %}
-  {% include "postslist.njk" %}
+{% set postslist = collections[ tag ] %}
+{% include "postslist.njk" %}
