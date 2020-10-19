@@ -70,8 +70,6 @@
 
         </div>
 
-        
-
     </div>
     <!-- Footer Links -->
 
@@ -185,30 +183,33 @@ fjs
 (function () {
 var stripe = Stripe('pk_live_51HUpCrCazeDg6hkd0SO3AKqg9KHrV1SmLforiwYhAZHhohRB9dvt1CU4V2bDT3ALQfUrBHKMqLdO0vwsNn5GbQiO00jwsdn2kl');
 var checkoutButton = document.getElementById('checkout-button-price_1HUpuiCazeDg6hkd6tioVtqF');
+if (checkoutButton) {
+console.log('ok');
 checkoutButton.addEventListener('click', function () {
-stripe
-    .redirectToCheckout({
-        lineItems: [
-            {
-                price: 'price_1HUpuiCazeDg6hkd6tioVtqF',
-                quantity: 1
+    stripe
+        .redirectToCheckout({
+            lineItems: [
+                {
+                    price: 'price_1HUpuiCazeDg6hkd6tioVtqF',
+                    quantity: 1
+                }
+            ],
+            mode: 'subscription',
+            successUrl: window.location.protocol + '//www.thefacepack.com/thanks-for-your-order',
+            cancelUrl: window.location.protocol + '//www.thefacepack.com/',
+            billingAddressCollection: 'required',
+            shippingAddressCollection: {
+                allowedCountries: ['GB']
             }
-        ],
-        mode: 'subscription',
-        successUrl: window.location.protocol + '//www.thefacepack.com/thanks-for-your-order',
-        cancelUrl: window.location.protocol + '//www.thefacepack.com/',
-        billingAddressCollection: 'required',
-        shippingAddressCollection: {
-            allowedCountries: ['GB']
-        }
-    })
-    .then(function (result) {
-        if (result.error) {
-            var displayError = document.getElementById('error-message');
-            displayError.textContent = result.error.message;
-        }
-    });
+        })
+        .then(function (result) {
+            if (result.error) {
+                var displayError = document.getElementById('error-message');
+                displayError.textContent = result.error.message;
+            }
+        });
 });
+};
 })();
 </script>
 
@@ -217,6 +218,8 @@ stripe
 var stripe = Stripe('pk_live_51HUpCrCazeDg6hkd0SO3AKqg9KHrV1SmLforiwYhAZHhohRB9dvt1CU4V2bDT3ALQfUrBHKMqLdO0vwsNn5GbQiO00jwsdn2kl');
 
 var checkoutButton_1 = document.getElementById('checkout-button-price_1HUptdCazeDg6hkd2trImC87');
+if (checkoutButton_1) {
+console.log('ok1');
 checkoutButton_1.addEventListener('click', function () {
 stripe
     .redirectToCheckout({
@@ -241,6 +244,7 @@ stripe
         }
     });
 });
+};
 })();
 </script>
 
@@ -249,6 +253,8 @@ stripe
 var stripe = Stripe('pk_live_51HUpCrCazeDg6hkd0SO3AKqg9KHrV1SmLforiwYhAZHhohRB9dvt1CU4V2bDT3ALQfUrBHKMqLdO0vwsNn5GbQiO00jwsdn2kl');
 
 var checkoutButton_2 = document.getElementById('checkout-button-price_1HUpsQCazeDg6hkdVhGZ4b9l');
+if (checkoutButton_2) {
+console.log('ok2');
 checkoutButton_2.addEventListener('click', function () {
 stripe
     .redirectToCheckout({
@@ -273,5 +279,6 @@ stripe
         }
     });
 });
+};
 })();
 </script>
