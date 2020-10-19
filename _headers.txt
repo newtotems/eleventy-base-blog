@@ -1,0 +1,6 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self';"
+    Content-Security-Policy = "script-src 'self' www.google-analytics.com;"
+    Content-Security-Policy = "script-src 'self' q.stripe.com;"
