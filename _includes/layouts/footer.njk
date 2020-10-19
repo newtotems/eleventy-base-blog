@@ -155,36 +155,10 @@ responsive: [
 </script>
 
 <script>
-window.fbAsyncInit = function () {
-FB.init({appId: '{your-app-id}', cookie: true, xfbml: true, version: '{api-version}'});
-
-FB
-.AppEvents
-.logPageView();
-
-};
-
-(function (d, s, id) {
-var js,
-fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) {
-return;
-}
-js = d.createElement(s);
-js.id = id;
-js.src = "https://connect.facebook.net/en_US/sdk.js";
-fjs
-.parentNode
-.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-
-<script>
 (function () {
 var stripe = Stripe('pk_live_51HUpCrCazeDg6hkd0SO3AKqg9KHrV1SmLforiwYhAZHhohRB9dvt1CU4V2bDT3ALQfUrBHKMqLdO0vwsNn5GbQiO00jwsdn2kl');
 var checkoutButton = document.getElementById('checkout-button-price_1HUpuiCazeDg6hkd6tioVtqF');
 if (checkoutButton) {
-console.log('ok');
 checkoutButton.addEventListener('click', function () {
     stripe
         .redirectToCheckout({
@@ -219,7 +193,6 @@ var stripe = Stripe('pk_live_51HUpCrCazeDg6hkd0SO3AKqg9KHrV1SmLforiwYhAZHhohRB9d
 
 var checkoutButton_1 = document.getElementById('checkout-button-price_1HUptdCazeDg6hkd2trImC87');
 if (checkoutButton_1) {
-console.log('ok1');
 checkoutButton_1.addEventListener('click', function () {
 stripe
     .redirectToCheckout({
@@ -254,7 +227,6 @@ var stripe = Stripe('pk_live_51HUpCrCazeDg6hkd0SO3AKqg9KHrV1SmLforiwYhAZHhohRB9d
 
 var checkoutButton_2 = document.getElementById('checkout-button-price_1HUpsQCazeDg6hkdVhGZ4b9l');
 if (checkoutButton_2) {
-console.log('ok2');
 checkoutButton_2.addEventListener('click', function () {
 stripe
     .redirectToCheckout({
