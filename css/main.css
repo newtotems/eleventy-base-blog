@@ -26,6 +26,14 @@ h6 {
     font-weight: 400;
 }
 
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 footer {
     background: #fff;
 }
