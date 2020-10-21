@@ -93,5 +93,29 @@
         "url": "https://bielenda.pl/en/catalog/maseczki-2w1-luffa-drozdze/1101-fermented-yeast-linseed-mask-maseczka-normalizujaca-sebum-control-z-bioaktywnym-fermentem-drozdzowym",
         "cost": 0.40,
         "stock": 18
+    },
+    {
+        "itemid": 9,
+        "brandid": 3,
+        "name": "Collagen Face Mask",
+        "description": "Helps to tone, firm and smooth fine lines and winkles, rejuvinating skin.",
+        "imgs": [
+            "/img/products/Collagen-Face-Mask.jpg"
+        ],
+        "url": "",
+        "cost": 0.59,
+        "stock": 24
+    },
+    {
+        "itemid": 10,
+        "brandid": 4,
+        "name": "Expert C Metallic Vitamin Mask",
+        "description": "3 in 1 - Eliminates fatigue symptoms and immediately regenerates, revitalises and moisturises. Metallic vitamin mask 3 in 1 for dry, fatigued, dull skin immediately eliminates symptoms of fatigue, illuminates and smoothes skin. Advanced active ingredients: expert c™ complex – intensely concentrated vitamin c of new generation, tri-hyaluron 24h system™, lumiskin™.",
+        "imgs": [
+            "/img/products/Expert-C-Metallic-Vitamin-Mask.png"
+        ],
+        "url": "",
+        "cost": 0.35,
+        "stock": 12
     }
 ]

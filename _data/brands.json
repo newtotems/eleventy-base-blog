@@ -1,12 +1,25 @@
 [{
         "id": 1,
         "name": "Banobagi",
-        "logo": "logo"
+        "country": "South Korea",
+        "logo": ""
     },
     {
         "id": 2,
         "name": "Bielenda",
         "country": "Poland",
         "logo": "logo"
+    },
+    {
+        "id": 3,
+        "name": "Elysium Spa",
+        "country": "United Kingdom",
+        "logo": ""
+    },
+    {
+        "id": 4,
+        "name": "Eveline",
+        "country": "Poland",
+        "logo": ""
     }
 ]
