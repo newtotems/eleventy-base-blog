@@ -40,7 +40,7 @@ templateClass: tmpl-post
                                             {% endif %}
                                             {% if brand.country %}
                                                     {% for flag in countries %}
-                                                    {% if brand.country == flag%}
+                                                    {% if brand.country == flag.id %}
                                                         <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" width="100">
                                                         <div>{{flag.name}}</div>
                                                     {% endif %}
