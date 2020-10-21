@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-
+{% set total %}
 {% set packid = page.filePathStem | replace("/packs/", "") %}
 
 {% for item in packages %}
@@ -57,6 +57,7 @@ templateClass: tmpl-post
                                     
                                 </div>
                             </div>
+                            {% set total = total + unit.cost %}
                         {% endif %}
                     {% endfor %}
                 {% endfor %}
@@ -65,11 +66,4 @@ templateClass: tmpl-post
         {% endfor %}
     </div>
 </section>
-
-<div class="d-none">
-    {% set total %}
-{% for unit in stock %}
-   {% set total = total + unit.cost %}
-{% endfor %}
 {{total}}
-</div>
