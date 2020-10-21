@@ -225,5 +225,29 @@
         "url": "",
         "cost": 0.89,
         "stock": 12
+    },
+    {
+        "itemid": 20,
+        "brandid": 4,
+        "name": "Charcoal Deeply Moisturizing Face Sheet Mask",
+        "description": "Deeply moisturizing purifying mask, soaked with 20 ml of a detoxifying concentrate, effectively unblocks and tightens pores, regulates sebum secretion and mattifies. Prevents the formation of imperfections and leaves skin pleasantly clean and fresh. ACTIVE INGREDIENTS: activated carbon, volcanic ash, caviar, black currant, black soybean, seaweeds, black rice, black sesame.",
+        "imgs": [
+            "/img/products/Charcoal-Deeply-Moisturizing-Face-Sheet-Mask.jpg"
+        ],
+        "url": "",
+        "cost": 0.94,
+        "stock": 12
+    },
+    {
+        "itemid": 21,
+        "brandid": 4,
+        "name": "Q10 Anti-Wrinkle Face Sheet Mask",
+        "description": "ANTI-WRINKLE KOREAN SHEET MASK, soaked with 20ml of a rejuvenating serum, effectively improves skin firmness, regenerates, smoothes and reduces wrinkles. The mask increases density and tension of skin, intensely moisturizes and revitalizes. ACTIVE INGREDIENTS: coenzyme Q10, collagen, aloe vera, mugwort, cucumber, camomile, lily and allantoin.",
+        "imgs": [
+            "/img/products/Q10-Anti-Wrinkle-Face-Sheet-Mask.jpg"
+        ],
+        "url": "",
+        "cost": 0.94,
+        "stock": 12
     }
 ]
