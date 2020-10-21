@@ -34,9 +34,6 @@ templateClass: tmpl-post
                                     {% for image in unit.imgs %}
                                         <img src="{{image}}" alt="" height="200"/>
                                     {% endfor %}
-                                </div>
-                                <div class="col-md-8 text-left">
-                                    <h2>{{unit.name}}</h2>
                                     {% for brand in brands%}
                                         {% if brand.id == unit.brandid %}
                                             {% if brand.name %}
@@ -49,12 +46,16 @@ templateClass: tmpl-post
                                             </h4>
                                         {% endif %}
                                     {% endfor %}
-                                    <p>{{unit.description}}</p>
                                     {% if unit.url %}
                                         <p>
                                             <a href="{{unit.url}}" target="_blank">More Info</a>
                                         </p>
                                     {% endif %}
+                                </div>
+                                <div class="col-md-8 text-left">
+                                    <h2>{{unit.name}}</h2>
+                                    <p>{{unit.description}}</p>
+                                    
                                 </div>
                             </div>
                         {% endif %}
@@ -67,5 +68,5 @@ templateClass: tmpl-post
 </section>
 
 <div class="d-none">
-    
+
 </div>
