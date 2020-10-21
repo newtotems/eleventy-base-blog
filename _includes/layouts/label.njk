@@ -1,5 +1,8 @@
 <div class="d-none d-print-block label">
-            <h1 class="row">Enjoy your masks, {{fname}}!</h1>
+    {% if fname %}
+        <h1 class="row">Enjoy your masks,
+            {{fname}}!</h1>
+    {% endif %}
     {{ content | safe }}
     {% include "qrcode.njk" %}
 </div>
