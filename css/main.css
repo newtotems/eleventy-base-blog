@@ -204,6 +204,10 @@ h4 {
     text-transform: capitalize;
 }
 
+main {
+    min-height: 600px;
+}
+
 .pack {
     background: #ccc;
     border-radius: 5px;
@@ -289,81 +293,6 @@ h4 {
 
 .fp__price--alt {
     outline: 1px solid #ff1a79;
-}
-
-
-/* Pre-Launch*/
-
-.prelaunch header a {
-    display: none;
-}
-
-.prelaunch .fp__btn,
-.prelaunch .fp__price,
-.prelaunch .fp__pricing,
-.prelaunch .fp__brand-logos,
-.prelaunch .fp__tabs,
-.prelaunch .fp__tab-content,
-.prelaunch .fp__signup,
-.prelaunch .fp__blogs {
-    display: none;
-    visibility: hidden;
-}
-
-.prelaunch .fp__h1 h1 {
-    margin-bottom: 4rem;
-}
-
-.fp__launch {
-    visibility: hidden;
-    display: none;
-}
-
-.prelaunch .fp__launch {
-    visibility: visible;
-    display: flex;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 4rem 0 2rem;
-}
-
-.prelaunch .fp__launch-title {
-    font-size: 4.5rem;
-    color: #ec4471;
-    margin-top: -15px;
-}
-
-.prelaunch .fp__launch-sub {
-    color: #ec4471;
-    text-transform: uppercase;
-    margin: 1rem 0 0;
-    letter-spacing: 1px;
-}
-
-.prelaunch .icon,
-.prelaunch .btn-login,
-.prelaunch h2,
-.prelaunch h3 {
-    display: none;
-}
-
-.prelaunch h3 {
-    padding: 0;
-    margin: 2px 0;
-    font-size: 4.5rem;
-}
-
-.prelaunch #mc-embedded-subscribe {
-    height: 3rem;
-    background: #ec4471;
-    color: #fff;
-}
-
-.prelaunch #mce-EMAIL {
-    border: 2px solid #ec4471;
-    border-radius: 5px;
-    padding: 5px;
-    height: 3rem;
 }
 
 .fp__price-info {
@@ -1057,9 +986,6 @@ img[src$='#img-header'] {
     .fp__usp--item {
         padding: 15px 5px;
         font-size: 3rem;
-    }
-    .prelaunch .fp__envelope {
-        transform: scale(0.9);
     }
     .fp__price {
         height: 150px;
