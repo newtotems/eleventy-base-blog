@@ -26,6 +26,10 @@ h6 {
     font-weight: 400;
 }
 
+.website-contact-form label {
+    display: block;
+}
+
 #myVideo {
     max-width: 100%;
     max-height: 400px;
