@@ -2,42 +2,42 @@
         "id": 1,
         "name": "Banobagi",
         "country": 1,
-        "logo": ""
+        "logo": "Banobagi.jpg"
     },
     {
         "id": 2,
         "name": "Bielenda",
         "country": 2,
-        "logo": "logo"
+        "logo": "Bielenda.jpg"
     },
     {
         "id": 3,
         "name": "Elysium Spa",
         "country": 3,
-        "logo": ""
+        "logo": "Elysium-Spa.jpg"
     },
     {
         "id": 4,
-        "name": "Eveline",
+        "name": "Eveline Cosmetics",
         "country": 2,
-        "logo": ""
+        "logo": "Eveline-Cosmetics.jpg"
     },
     {
         "id": 5,
-        "name": "Marion",
+        "name": "Marion Cosmetics",
         "country": 2,
-        "logo": ""
+        "logo": "Marion-Cosmetics.jpg"
     },
     {
         "id": 6,
         "name": "Merbliss",
         "country": 1,
-        "logo": ""
+        "logo": "Merbliss.jpg"
     },
     {
         "id": 7,
         "name": "Nuage",
         "country": 3,
-        "logo": ""
+        "logo": "Nuage.png"
     }
 ]
