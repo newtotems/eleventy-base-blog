@@ -1,0 +1,16 @@
+[{
+        "id": 1,
+        "name": "South Korea",
+        "flag": "South-Korea.png"
+    },
+    {
+        "id": 2,
+        "name": "Poland",
+        "flag": "Poland.png"
+    },
+    {
+        "id": 3,
+        "name": "United Kingdom",
+        "flag": "United-Kingdom.svg"
+    }
+]

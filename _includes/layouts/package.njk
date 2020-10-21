@@ -33,16 +33,19 @@ templateClass: tmpl-post
                                     {% for image in unit.imgs %}
                                         <img src="{{image}}" alt="" height="200"/>
                                     {% endfor %}
-                                    {% for brand in brands%}
+                                    {% for brand in brands %}
                                         {% if brand.id == unit.brandid %}
                                             {% if brand.name %}
                                                 <h3>{{brand.name}}</h3>
                                             {% endif %}
                                             {% if brand.country %}
-                                                <h4>Country of Origin :
-                                                    {{brand.country}}
+                                                    {% for flag in countries %}
+                                                    {% if brand.country == flag%}
+                                                        <img src="{{flag.flag}}" alt="{{flag.name}}" width="100">
+                                                        <div>{{flag.name}}</div>
+                                                    {% endif %}
+                                                    {% endfor %}
                                                 {% endif %}
-                                            </h4>
                                         {% endif %}
                                     {% endfor %}
                                     {% if unit.url %}

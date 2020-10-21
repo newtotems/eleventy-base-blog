@@ -1,43 +1,43 @@
 [{
         "id": 1,
         "name": "Banobagi",
-        "country": "South Korea",
+        "country": 1,
         "logo": ""
     },
     {
         "id": 2,
         "name": "Bielenda",
-        "country": "Poland",
+        "country": 2,
         "logo": "logo"
     },
     {
         "id": 3,
         "name": "Elysium Spa",
-        "country": "United Kingdom",
+        "country": 3,
         "logo": ""
     },
     {
         "id": 4,
         "name": "Eveline",
-        "country": "Poland",
+        "country": 2,
         "logo": ""
     },
     {
         "id": 5,
         "name": "Marion",
-        "country": "Poland",
+        "country": 2,
         "logo": ""
     },
     {
         "id": 6,
         "name": "Merbliss",
-        "country": "South Korea",
+        "country": 1,
         "logo": ""
     },
     {
         "id": 7,
         "name": "Nuage",
-        "country": "United Kingdom",
+        "country": 3,
         "logo": ""
     }
 ]
