@@ -28,6 +28,20 @@ h6 {
 
 .website-contact-form label {
     display: block;
+    text-transform: uppercase;
+    margin: 15px 0 0;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.website-contact-form input {
+    width: 100%;
+}
+
+.website-contact-form textarea {
+    width: 100%;
+    height: 200px;
 }
 
 #myVideo {
