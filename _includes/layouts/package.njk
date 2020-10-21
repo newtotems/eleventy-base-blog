@@ -30,12 +30,12 @@ templateClass: tmpl-post
                     {% for mask in item.contents %}
                         {% if unit.itemid == mask %}
                             <div class="row pack-item">
-                                <div class="col-4">
+                                <div class="col-md-4">
                                     {% for image in unit.imgs %}
                                         <img src="{{image}}" alt="" height="200"/>
                                     {% endfor %}
                                 </div>
-                                <div class="col-8 text-left">
+                                <div class="col-md-8 text-left">
                                     <h2>{{unit.name}}</h2>
                                     {% for brand in brands%}
                                         {% if brand.id == unit.brandid %}
