@@ -57,7 +57,7 @@ templateClass: tmpl-post
                                     
                                 </div>
                             </div>
-                            {% set total = total + unit.cost %}
+                            {{unit.cost}}
                         {% endif %}
                     {% endfor %}
                 {% endfor %}
@@ -66,4 +66,3 @@ templateClass: tmpl-post
         {% endfor %}
     </div>
 </section>
-{{total}}
