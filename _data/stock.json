@@ -117,5 +117,113 @@
         "url": "",
         "cost": 0.35,
         "stock": 12
+    },
+    {
+        "itemid": 11,
+        "brandid": 5,
+        "name": "Tropical Island Watermelon Jelly Mask",
+        "description": "Are you a discoverer? Follow the trail of care rituals on which you’ll get to know the unique power of masks with the consistency of jelly. The combination of watermelon with extract of green tea leads to improvement in the skin’s condition through intensive moisturizing and enables one to delay the aging processes.",
+        "imgs": [
+            "/img/products/Tropical-Island-Watermelon-Jelly-Mask.jpg"
+        ],
+        "url": "",
+        "cost": 0.35,
+        "stock": 12
+    },
+    {
+        "itemid": 12,
+        "brandid": 5,
+        "name": "Neon Vibes Illuminating Peel-off Mask",
+        "description": "Say no to dull and lifeless skin with this colorful, neon peel off mask inspired by the coolest trends. Blue agave extract moisturizes and brings back the radiant glow to your complexion. The calming scent of aloe vera will ensure a relaxing SPA experience.",
+        "imgs": [
+            "/img/products/Neon-Vibes-Illuminating-Peel-off-Mask.jpg"
+        ],
+        "url": "",
+        "cost": 0.45,
+        "stock": 12
+    },
+    {
+        "itemid": 13,
+        "brandid": 5,
+        "name": "Tropical Island Pina Colada Jelly Mask",
+        "description": "Are you a discoverer? Follow the trail of care rituals on which you’ll get to know the unique power of masks with the consistency of jelly. Envelop yourself in the sunny extract of pineapple and coconut water and let yourself be carried away to a blue lagoon! Feel its nourishing effect on your own skin and enjoy a radiant complexion and healthy appearance. Directions for use: spread the refreshing mask evenly on your face, avoiding the eye area. Leave on the skin for about 15 minutes and massage with circular movements. Wash with warm water.",
+        "imgs": [
+            "/img/products/Tropical-Island-Pina-Colada-Jelly-Mask.jpg"
+        ],
+        "url": "",
+        "cost": 0.35,
+        "stock": 12
+    },
+    {
+        "itemid": 14,
+        "brandid": 5,
+        "name": "Tropical Island Mango And Maracuya Jelly Mask",
+        "description": "Are you a discoverer? Follow the trail of care rituals on which you’ll get to know the unique power of masks with the consistency of jelly. Tropical passion fruit will carry you away to South America in order to enchant with the regenerating power of its minerals, while mango extract cares for your appropriate skin tone.",
+        "imgs": [
+            "/img/products/Tropical-Island-Mango-And-Maracuya-Jelly-Mask.jpg"
+        ],
+        "url": "",
+        "cost": 0.35,
+        "stock": 12
+    },
+    {
+        "itemid": 15,
+        "brandid": 5,
+        "name": "Neon Vibes Antioxidant Peel-off Mask",
+        "description": "Declare the war on free radicals with this colorful, neon peel off mask inspired by fashion trends. Acai extract with its antioxidant properties helps to regain balance for a youthful, glowy complexion. Let yourself be carried away by the tropical fragrance of frangipani flowers.",
+        "imgs": [
+            "/img/products/Neon-Vibes-Antioxidant-Peel-off-Mask.jpg"
+        ],
+        "url": "",
+        "cost": 0.45,
+        "stock": 12
+    },
+    {
+        "itemid": 16,
+        "brandid": 6,
+        "name": "Wedding Dress Intense Hydration Mask",
+        "description": "This face mask helps to brighten up skin tone and to deliver a global anti-aging treatment: super hydration, elasticity improvement, anti-wrinkle, smooth skin. Delicately manufactured with a top-quality fiber, this mask is soft like silk and deliver skin care ingredients more comfortably and effectively, deep in the skin.",
+        "imgs": [
+            "/img/products/Wedding-Dress-Intense-Hydration-Mask.jpg"
+        ],
+        "url": "http://en.merbliss.com/product/wedding-dress-intense-hydration-mask/292/",
+        "cost": 0,
+        "stock": 1
+    },
+    {
+        "itemid": 17,
+        "brandid": 7,
+        "name": "Hyaluronic Acid with Chamomile",
+        "description": "Give yourself an at-home pamper with the Nuage Hyaluronic Acid and Chamomile Face Mask. This gorgeous mask helps keep skin looking fresh and even by nourishing the skin and helping it to absorb moisture. Full of antioxidants, this 15-minute mask helps to reduce wrinkles and spots for the skin you've always been dreaming of.",
+        "imgs": [
+            "/img/products/Hyaluronic-Acid-with-Chamomile.jpg"
+        ],
+        "url": "",
+        "cost": 0.55,
+        "stock": 24
+    },
+    {
+        "itemid": 18,
+        "brandid": 7,
+        "name": "Aloe Vera with Hyaluronic Acid",
+        "description": "Calm and soothe skin with this Aloe Vera Soothing Face Mask. Formulated using Hyaluronic acid to hydrate the skin, this single application face mask offers plenty of skin-loving benefits. Aloe vera contains antioxidants, alongside vitamins A and C to help treat acne and reduce inflammation and skin redness.",
+        "imgs": [
+            "/img/products/Aloe-Vera-with-Hyaluronic-Acid.jpg"
+        ],
+        "url": "",
+        "cost": 0.55,
+        "stock": 24
+    },
+    {
+        "itemid": 19,
+        "brandid": 4,
+        "name": "Aloe Vera Calming And Refreshing Face Sheet Mask",
+        "description": "CALMING AND REFRESHING KOREAN SHEET MASK, soaked with 20 ml of a soothing serum, instantly soothes skin, restores its smoothness and elasticity, maximally moisturizes and protects against water loss. Effectively calms signs of irritation, restores skin a natural glow and immediately refreshes. ACTIVE INGREDIENTS: aloe vera, cucumber, licorice, green tea, orchid, betaine, allantoin and camomile.",
+        "imgs": [
+            "/img/products/Aloe-Vera-Calming-And-Refreshing-Face-Sheet-Mask.jpg"
+        ],
+        "url": "",
+        "cost": 0.89,
+        "stock": 12
     }
 ]

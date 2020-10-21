@@ -21,5 +21,23 @@
         "name": "Eveline",
         "country": "Poland",
         "logo": ""
+    },
+    {
+        "id": 5,
+        "name": "Marion",
+        "country": "Poland",
+        "logo": ""
+    },
+    {
+        "id": 6,
+        "name": "Merbliss",
+        "country": "South Korea",
+        "logo": ""
+    },
+    {
+        "id": 7,
+        "name": "Nuage",
+        "country": "United Kingdom",
+        "logo": ""
     }
 ]
