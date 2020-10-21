@@ -67,7 +67,9 @@ templateClass: tmpl-post
 </section>
 
 <div class="d-none">
+    {% set total %}
 {% for unit in stock %}
-    {{unit.cost | sum}}
+   {% set total = total + unit.cost %}
 {% endfor %}
+{{total}}
 </div>
