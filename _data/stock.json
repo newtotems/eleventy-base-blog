@@ -57,5 +57,41 @@
         "url": "https://bielenda.pl/en/catalog/manuka-honey-nutri-elixir/841-manuka-honey-nutri-elixir-nourishing-and-moisturizing-face-mask-for-dry-and-sensitive-skin-8-g",
         "cost": 0.39,
         "stock": 18
+    },
+    {
+        "itemid": 6,
+        "brandid": 2,
+        "name": "Smoothie Mask Prebiotic Normalizing Strawberry Watermelon",
+        "description": "A fluffy face mask rich in active ingredients, designed for the care of dry, dehydrated and gray skin. The unique rich formula of the mask moisturizes and refreshes the skin and does not burden it. It is perfectly absorbed, and effectively cares for delicate and dry skin. The mask is rich in antioxidants and vitamins and contains Strawberry Juice with anti-radical and anti-aging properties which moisturizes and revitalizes the skin as well as Watermelon Juice which adds radiance to the skin and Prebiotic which strengthens and improves the skin's resistance to harmful ingredients, supports epidermis regeneration and restores its proper pH.",
+        "imgs": [
+            "/img/products/Smoothie-Mask-Prebiotic-Normalizing-Strawberry-Watermelon.png"
+        ],
+        "url": "https://bielenda.pl/en/catalog/smoothie/857-smoothie-mask-moisturizing-face-mask-with-prebioticstrawberrywatermelon-10g",
+        "cost": 0.90,
+        "stock": 10
+    },
+    {
+        "itemid": 7,
+        "brandid": 2,
+        "name": "Luffa Black Tea Power Moisturizing Face Mask",
+        "description": "The Black Tea 2-in-1 Mask With Luffa Scrub is an instant care for all skin types, especially dehydrated skin. Its natural active ingredients are enclosed in a 2-in-1 hydro-gel formula with luffa scrub. It contains Black Tea Extract which is a source of flavonoids, polyphenols and caffeine, has strong antioxidant and moisturizing properties and regenerates, tones, and improves skin elasticity. Luffa is a natural exfoliating ingredient - the so-called 'plant sponge' - which perfectly cleanses the skin, removes dead skin and smoothes. The Black Tea 2-in-1 Mask With Luffa Scrub cleanses the skin, gives it a radiant and fresh look and restores the softness of the epidermis. It moisturizes the skin and supports the improvement of its elasticity and appearance, leaving it refreshed and smoothed. The peeling effect provides a gentle but effective exfoliation, thanks to which the absorption of active ingredients contained in the mask is more effective.",
+        "imgs": [
+            "/img/products/Luffa-Black-Tea-Power-Moisturizing-Face-Mask.png"
+        ],
+        "url": "https://bielenda.pl/en/catalog/maseczki-2w1-luffa-drozdze/1100-black-tea-power-luffa-mask-maseczka-black-tea-2w1-z-peelingiem-luffa-nawilzajaca",
+        "cost": 0.40,
+        "stock": 18
+    },
+    {
+        "itemid": 8,
+        "brandid": 2,
+        "name": "Fermented Yeast Luffa Linseed Mask With Sebum Control",
+        "description": "With 2-in-1 Bioactive Yeast and a gentle scrub this mask is an instant care for combination, oily and problematic skin. It normalizes skin thanks to natural active ingredients enclosed in a cream formula 2-in-1 mask with a delicate scrub. It contains Bioactive Yeast - a natural source of peptides, minerals and vitamins which has strong anti-radical and anti-aging properties, reduces discoloration, moisturizes and nourishes the skin and supports its regeneration capacity. White Clay is mild for the skin, and fantastic for removing impurities and sebum. Flaxseed Oil softens and moisturizes, and acts as a delicate scrub, exfoliating dead skin. This mask cleanses the skin, gives it a radiant and fresh look and restores the softness of the epidermis. The mask supports the seboregulation process, reduces the visibility of pores, supports the fight against acne lesions and blackheads. The scrub provides a gentle but effective exfoliation, thanks to which the absorption of active ingredients contained in the mask is more effective.",
+        "imgs": [
+            "/img/products/Fermented-Yeast-Luffa-Linseed-Mask-With-Sebum-Control.png"
+        ],
+        "url": "https://bielenda.pl/en/catalog/maseczki-2w1-luffa-drozdze/1101-fermented-yeast-linseed-mask-maseczka-normalizujaca-sebum-control-z-bioaktywnym-fermentem-drozdzowym",
+        "cost": 0.40,
+        "stock": 18
     }
 ]
