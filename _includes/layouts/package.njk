@@ -39,15 +39,21 @@ templateClass: tmpl-post
                                     <h2>{{unit.name}}</h2>
                                     {% for brand in brands%}
                                         {% if brand.id == unit.brandid %}
-                                            <h3>{{brand.name}}</h3>
-                                            <h4>Country of Origin :
-                                                {{brand.country}}
+                                            {% if brand.name %}
+                                                <h3>{{brand.name}}</h3>
+                                            {% endif %}
+                                            {% if brand.country %}
+                                                <h4>Country of Origin :
+                                                    {{brand.country}}
+                                                {% endif %}
                                             </h4>
                                         {% endif %}
                                     {% endfor %}
                                     <p>{{unit.description}}</p>
                                     {% if unit.url %}
-                                    <p><a href="{{unit.url}}">More Info</a></p>
+                                        <p>
+                                            <a href="{{unit.url}}">More Info</a>
+                                        </p>
                                     {% endif %}
                                 </div>
                             </div>
