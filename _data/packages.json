@@ -1,31 +1,11 @@
 [{
-        "packageid": 1234,
-        "customer": 999,
-        "contents": [
-            100,
-            500,
-            300,
-            212
-        ]
-    },
-    {
-        "packageid": 33345,
-        "customer": 223,
-        "contents": [
-            432,
-            678,
-            432,
-            844
-        ]
-    },
-    {
-        "packageid": 1113796727,
-        "customer": 1,
-        "contents": [
-            1,
-            2,
-            3,
-            5
-        ]
-    }
-]
+    "packageid": 1113796727,
+    "customer": 1,
+    "contents": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ]
+}]

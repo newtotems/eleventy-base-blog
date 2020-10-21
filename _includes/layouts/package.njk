@@ -46,6 +46,9 @@ templateClass: tmpl-post
                                         {% endif %}
                                     {% endfor %}
                                     <p>{{unit.description}}</p>
+                                    {% if unit.url %}
+                                    <p><a href="{{unit.url}}">More Info</a></p>
+                                    {% endif %}
                                 </div>
                             </div>
                         {% endif %}

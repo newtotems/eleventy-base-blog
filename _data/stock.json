@@ -1,14 +1,12 @@
 [{
         "itemid": 1,
         "brandid": 1,
-        "name": "Vita Cocktail Foil Mask",
-        "description": "description 1",
+        "name": "Vita Cocktail Aqua Foil Mask",
+        "description": "This sheet mask contains vita cocktail and hydrolyzed collagen which makes your skin moisturizing, tangible and bright. ",
         "imgs": [
-            "/img/product_images/x.jpg",
-            "/img/product_images/x.jpg",
-            "/img/product_images/x.jpg"
+            "/img/products/Vita-Cocktail-Aqua-Foil-Mask.jpg"
         ],
-        "url": "url",
+        "url": "",
         "cost": 0,
         "stock": 2
     },
@@ -16,13 +14,11 @@
         "itemid": 2,
         "brandid": 2,
         "name": "Blue Detox Metalic Moisturizing Mask",
-        "description": "Detoxifying Metallic Mask quickly and effectively improves the condition of dry and sensitive skin. The innovative combination of high-quality metal nanoparticles combined with carbon has created an extremely effective formulation that deeply cleanses the skin of toxins and other impurities, instantly refreshes, deeply hydrates and regenerates. The mask effectively revitalises the grey, tired complexion, adds radiance and vitality, firms and strengthens fine, delicate epidermis, levelling out the skin colour. Content: NANO PLATINUM – high-quality metal with moisturising and depigmenting properties. Firms the skin, reduces wrinkles, brightens uneven pigmentation and effectively maintains moisture level. CARBON has antibacterial, cleansing and astringent properties. It acts as a magnet: attracts and absorbs toxins, dead skin, excess sebum and other impurities from the surface and deeper layers of the skin. Evens out the skin tone and prevents the formation of wrinkles. MAGNESIUM has anti-inflammatory, cell regenerating and energy-providing properties. Tones and delays the ageing processes.",
+        "description": "This Detoxifying Metallic Mask quickly and effectively improves the condition of dry and sensitive skin. The innovative combination of high-quality metal nanoparticles combined with carbon has created an extremely effective formulation that deeply cleanses the skin of toxins and other impurities, instantly refreshes, deeply hydrates and regenerates. The mask effectively revitalises the grey, tired complexion, adds radiance and vitality, firms and strengthens fine, delicate epidermis, levelling out the skin colour. Content: NANO PLATINUM – high-quality metal with moisturising and depigmenting properties. Firms the skin, reduces wrinkles, brightens uneven pigmentation and effectively maintains moisture level. CARBON has antibacterial, cleansing and astringent properties. It acts as a magnet: attracts and absorbs toxins, dead skin, excess sebum and other impurities from the surface and deeper layers of the skin. Evens out the skin tone and prevents the formation of wrinkles. MAGNESIUM has anti-inflammatory, cell regenerating and energy-providing properties. Tones and delays the ageing processes.",
         "imgs": [
-            "/img/products/Bielenda-Blue-Detox-Metalic-Moisturizing-Mask.jpg",
-            "/img/product_images/x2.jpg",
-            "/img/product_images/x2.jpg"
+            "/img/products/Bielenda-Blue-Detox-Metalic-Moisturizing-Mask.jpg"
         ],
-        "url": "url",
+        "url": "",
         "cost": 0.38,
         "stock": 6
     },
@@ -30,13 +26,11 @@
         "itemid": 3,
         "brandid": 2,
         "name": "Vege Detox Normalizing Face Mask With Kale and Beetroot",
-        "description": "description 3",
+        "description": "Vege Detox is an extraordinary and unique line of multipurpose vegetable face care cosmetics. This normalizing mask contains kale extract rich in vitamins and minerals, regenerating beetroot extract, strengthening prebiotic and normalizing azelaic acid derivativ and vitamin B3. Regenerating and detoxifying beetroot extract improves the appearance of the skin, renews and strengthens it. It is a strong antioxidant that fights the signs of aging and inhibits the formation of free radicals, restores the skin's radiance and glow. Prebiotic strengthens and improves skin's resistance to adverse factors, supports epidermis regeneration, maintains the proper PH azelaic acid derivative with effective seboregulatory and normalizing properties and reduces acne lesions.",
         "imgs": [
-            "/img/product_images/x3.jpg",
-            "/img/product_images/x3.jpg",
-            "/img/product_images/x3.jpg"
+            "/img/products/Vege-Detox-Normalizing-Face-Mask-With-Kale-and-Beetroot.jpg"
         ],
-        "url": "url",
+        "url": "https://bielenda.pl/en/catalog/vege-detox/837-vege-detox-normalizing-face-mask-mixed-skin-beetroot-kale-prebiotic-8g-ml",
         "cost": 0.45,
         "stock": 10
     },
@@ -44,13 +38,11 @@
         "itemid": 4,
         "brandid": 2,
         "name": "Smoothie Mask Prebiotic Avocado Kiwi",
-        "description": "description 4",
+        "description": "Lightweight gel mask rich in active ingredients, designed for the care of combination, oily and acne skin. Its unique rich formula with normalizing, anti-acne and brightening properties, do not burden the skin - it is perfectly absorbed and effectively cares for the skin prone to imperfections and greasiness. The mask is rich in antioxidants and minerals : Kiwi Extract which exhibits anti-radical and anti-aging effects, moisturizes, smoothes and revitalizes the skin. Rich Avocado oil that moisturizes and revitalizes the epidermis. It also demonstrates high compatibility with natural skin lipids, complementing the lipid barrier. Prebiotic which strengthens and improves skin immunity to adverse factors, supports epidermis regeneration and restores its proper pH.",
         "imgs": [
-            "/img/product_images/x4.jpg",
-            "/img/product_images/x4.jpg",
-            "/img/product_images/x4.jpg"
+            "/img/products/Smoothie-Mask-Prebiotic-Avocado-Kiwi.png"
         ],
-        "url": "url",
+        "url": "https://bielenda.pl/en/catalog/smoothie/858-smoothie-mask-normalizing-face-mask-with-prebioticavokadokiwi-10g",
         "cost": 0.90,
         "stock": 10
     },
@@ -58,13 +50,11 @@
         "itemid": 5,
         "brandid": 2,
         "name": "Manuka Honey Moisturizing And Nourishing Mask",
-        "description": "description 5",
+        "description": "A nourishing and moisturising mask with rich texture which effectively improves the quality of delicate and demanding dry and sensitive skin. Its exceptional formula is based on unique manuka honey which optimally moisturises dry, dehydrated skin, enhancing its regeneration and nourishment. The mask visibly improves skins overall appearance and condition. It strengthens and softens the epidermis, improves the colour and makes the complexion radiantly glowing. It contains highly effective active ingredients: Manuka Honey - a unique honey from New Zealand, the cleanest eco system in the world. It contains vitamins, minerals and organic acids and has strong anti oxidant, nourishing, and moisturising properties. Royal Jelly which contains vitamins B and C which improve the condition and quality of skin and reduce its sensitivity to external factors. Royal Jelly retains water in the epidermis, alleviates and soothes the skin.",
         "imgs": [
-            "/img/product_images/x5.jpg",
-            "/img/product_images/x5.jpg",
-            "/img/product_images/x5 .jpg"
+            "/img/products/Manuka-Honey-Moisturizing-And-Nourishing-Mask.png"
         ],
-        "url": "url",
+        "url": "https://bielenda.pl/en/catalog/manuka-honey-nutri-elixir/841-manuka-honey-nutri-elixir-nourishing-and-moisturizing-face-mask-for-dry-and-sensitive-skin-8-g",
         "cost": 0.39,
         "stock": 18
     }
