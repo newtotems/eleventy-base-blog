@@ -29,32 +29,36 @@ templateClass: tmpl-post
                     {% for mask in item.contents %}
                         {% if unit.itemid == mask %}
                             <div class="row pack-item">
-                                <div class="col-md-4 text-align-center">
+                                <div class="col-md-4 row">
+                                    <div class="col-lg-12">
                                     {% for image in unit.imgs %}
-                                        <img src="{{image}}" style="margin: 0 auto;display: block;" alt="" height="200"/>
+                                        <img src="{{image}}" alt="" height="200"/>
                                     {% endfor %}
                                     {% for brand in brands %}
+                                    </div>
                                    
                                         {% if brand.id == unit.brandid %}
-                                       
+                                       <div class="col-lg-6">
                                             {% if brand.logo %}
-<div><img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:200px;margin: 10px auto;display: block;"></div>
+<div><img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:200px"></div>
                                             {% endif %}
 
                                               {% if brand.country %}
                                                     {% for flag in countries %}
                                                     {% if brand.country == flag.id %}
-                                                        <div style="margin: 10px auto;display: block;"><img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30"></div>
+                                                        <div><img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30"></div>
                                                     {% endif %}
                                                     {% endfor %}
                                                 {% endif %}
-                                            
+                                            </div>
                                         {% endif %}
                                     {% endfor %}
                                     {% if unit.url %}
+                                    <div class="col-lg-6">
                                         <p>
                                             <a href="{{unit.url}}" target="_blank" class="btn btn-lg btn-primary">More Info</a>
                                         </p>
+                                        </div>
                                     {% endif %}
                                 </div>
                                 <div class="col-md-8 text-left">
