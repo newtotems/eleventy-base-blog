@@ -39,7 +39,7 @@ templateClass: tmpl-post
                                          {% if brand.country %}
                                                     {% for flag in countries %}
                                                     {% if brand.country == flag.id %}
-                                                        <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="35" style="positionrelative;top:-35px;">
+                                                        <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="35" style="position:relative;top:-35px;">
                                                     {% endif %}
                                                     {% endfor %}
                                                 {% endif %}
