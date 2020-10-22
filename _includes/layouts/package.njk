@@ -60,7 +60,7 @@ templateClass: tmpl-post
                                                     {% for flag in countries %}
                                                         {% if brand.country == flag.id %}
                                                             <div class="col-lg-6">
-                                                                <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30" style="max-width:100%;margin: 0 auto">
+                                                                <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30" style="max-width:100%;margin: 0 auto;border: 1px solid #ccc;">
                                                                 </div>
                                                         {% endif %}
                                                     {% endfor %}
