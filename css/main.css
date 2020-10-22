@@ -873,7 +873,7 @@ img[src$='#img-header'] {
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding-top: 20px;
+    padding: 20px 0;
     margin: 0 -15px;
     display: block;
 }
