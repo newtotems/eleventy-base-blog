@@ -11,10 +11,10 @@ templateClass: tmpl-post
         {% for customer in customers %}
             {% if customer.customerid == item.customer%}
                 {% set fname = customer.firstname %}
-                <section class="row blog-post justify-content-center d-print-none">
+                <section class="row blog-post justify-content-center d-flex d-print-none">
                     <div class="col-lg-6 pt-4 mt-4 row">
-                        <h1 class="row d-print-none text-center">Here's whats in your pack this month,  {{fname}}</h1>
-                        <p class="d-print-none text-center">Remember, each pack is unique to you.</p>
+                        <h1 class="row d-flex d-print-none text-center">Here's whats in your pack this month,  {{fname}}</h1>
+                        <p class="d-flex d-print-none text-center">Remember, each pack is unique to you! Mention <strong>#thefacepack</strong> <a href="https://instagram.com/the.face.pack" target="_blank">@the.face.pack</a> when sharing your unboxings.</p>
                     </div>
                 </section>
                 {% include "layouts/label.njk" %}
