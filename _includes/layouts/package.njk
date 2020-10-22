@@ -41,7 +41,7 @@ templateClass: tmpl-post
                                     <div class="row">
 <div class="col-lg-12">
                                         {% for image in unit.imgs %}
-                                            <img src="{{image}}" alt="" height="200" style="max-width:100%;margin: 0 auto"/>
+                                            <img src="{{image}}" alt="" height="200" style="max-width:100%;display:block;margin: 0 auto"/>
                                         {% endfor %}
                                         </div>
 
@@ -51,7 +51,7 @@ templateClass: tmpl-post
 
                                                 {% if brand.logo %}
                                                 <div class="col-lg-6">
-                                                    <img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:100%;margin: 0 auto">
+                                                    <img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:100%;display:block;margin: 0 auto">
                                                      </div>
                                                 {% endif %}
                                                
@@ -60,7 +60,7 @@ templateClass: tmpl-post
                                                     {% for flag in countries %}
                                                         {% if brand.country == flag.id %}
                                                             <div class="col-lg-6">
-                                                                <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30" style="max-width:100%;margin: 0 auto;border: 1px solid #ccc;">
+                                                                <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30" style="max-width:100%;display:block;margin: 0 auto;border: 1px solid #ccc;">
                                                                 </div>
                                                         {% endif %}
                                                     {% endfor %}
