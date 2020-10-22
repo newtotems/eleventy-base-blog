@@ -31,20 +31,20 @@ templateClass: tmpl-post
                             <div class="row pack-item">
                                 <div class="col-md-4 text-align-center">
                                     {% for image in unit.imgs %}
-                                        <img src="{{image}}" alt="" height="200"/>
+                                        <img src="{{image}}" style="margin: 0 auto;display: block;" alt="" height="200"/>
                                     {% endfor %}
                                     {% for brand in brands %}
                                    
                                         {% if brand.id == unit.brandid %}
                                        
                                             {% if brand.logo %}
-<div><img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:200px"></div>
+<div><img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:200px;margin: 10px auto;display: block;"></div>
                                             {% endif %}
 
                                               {% if brand.country %}
                                                     {% for flag in countries %}
                                                     {% if brand.country == flag.id %}
-                                                        <div><img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30"></div>
+                                                        <div style="margin: 10px auto;display: block;"><img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30"></div>
                                                     {% endif %}
                                                     {% endfor %}
                                                 {% endif %}
