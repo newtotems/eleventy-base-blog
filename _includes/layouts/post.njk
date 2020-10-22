@@ -9,7 +9,6 @@ templateClass: tmpl-post
 <article class="row justify-content-center">
 <div class="blog-post col-lg-5 pt-4 mt-4">
 {{ content | safe }}
-<div class="fb-share-button" data-href="{{ post.url | url }}" data-layout="button_count" data-size="large"> <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | url }}" class="fb-xfbml-parse-ignore">Share</a></div>
 
 <ul class="blog-nav">  
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
@@ -17,6 +16,8 @@ templateClass: tmpl-post
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
     {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
 </ul>
+
+<div style="margin-top:20px" class="fb-share-button" data-href="{{ post.url | url }}" data-layout="button_count" data-size="large"> <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | url }}" class="fb-xfbml-parse-ignore">Share</a></div>
 
 </div>
 </article>
