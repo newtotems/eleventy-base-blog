@@ -38,13 +38,13 @@ templateClass: tmpl-post
                                         {% if brand.id == unit.brandid %}
                                        
                                             {% if brand.logo %}
-<img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:200px">
+<div><img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:200px"></div>
                                             {% endif %}
 
                                               {% if brand.country %}
                                                     {% for flag in countries %}
                                                     {% if brand.country == flag.id %}
-                                                        <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30">
+                                                        <div><img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30"></div>
                                                     {% endif %}
                                                     {% endfor %}
                                                 {% endif %}
