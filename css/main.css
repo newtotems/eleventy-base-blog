@@ -867,6 +867,16 @@ img[src$='#img-header'] {
     border-radius: 0;
 }
 
+.callout {
+    background: url('/img/not-a-member-yet.jpg');
+    background-size: cover;
+    color: #fff;
+    font-weight: 600;
+    padding-top: 100px;
+    margin: 0 -15px;
+    display: block;
+}
+
 
 /* Slider */
 
