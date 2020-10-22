@@ -677,7 +677,7 @@ img[src$='#img-header'] {
 .blog-post em {
     color: #989898;
     line-height: 1.5;
-    margin-bottom: 2rem;
+    margin: 3rem 0 2rem;
     display: block;
 }
 
