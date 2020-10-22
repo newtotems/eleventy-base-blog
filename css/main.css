@@ -462,6 +462,7 @@ main {
 
 .blockquote footer {
     padding-top: 10px;
+    background: none;
 }
 
 .blockquote p::before {
