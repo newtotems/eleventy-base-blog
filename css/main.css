@@ -685,6 +685,7 @@ img[src$='#img-header'] {
 }
 
 .blog-post img[src$='#title'] {
+    width: 100%;
     max-width: 100%;
 }
 
