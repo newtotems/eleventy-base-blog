@@ -870,6 +870,7 @@ img[src$='#img-header'] {
 .callout {
     background: url('/img/not-a-member-yet.jpg');
     background-size: cover;
+    background-position: center;
     color: #fff;
     font-weight: 600;
     padding-top: 100px;
