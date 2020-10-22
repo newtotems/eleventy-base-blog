@@ -1,5 +1,6 @@
 ---
 title: Spotlight On Bielenda
+description: The first of our Spotlight series looks at Polish beauty mask brand Bielenda
 date: 2020-10-22
 limage: /img/blog/spotlight-bielenda-rinse-peel-masks.jpg
 tags:
