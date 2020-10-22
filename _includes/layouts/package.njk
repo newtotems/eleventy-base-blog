@@ -29,7 +29,7 @@ templateClass: tmpl-post
                     {% for mask in item.contents %}
                         {% if unit.itemid == mask %}
                             <div class="row pack-item">
-                                <div class="col-md-4">
+                                <div class="col-md-4 text-align-center">
                                     {% for image in unit.imgs %}
                                         <img src="{{image}}" alt="" height="200"/>
                                     {% endfor %}
@@ -53,7 +53,7 @@ templateClass: tmpl-post
                                     {% endfor %}
                                     {% if unit.url %}
                                         <p>
-                                            <a href="{{unit.url}}" target="_blank">More Info</a>
+                                            <a href="{{unit.url}}" target="_blank" class="btn btn-lg btn-primary">More Info</a>
                                         </p>
                                     {% endif %}
                                 </div>
