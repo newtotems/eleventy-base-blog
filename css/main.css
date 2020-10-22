@@ -690,6 +690,16 @@ img[src$='#img-header'] {
     max-width: 100%;
 }
 
+.blog-nav {
+    margin: 3rem 0;
+}
+
+.blog-nav li {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
 .label {
     width: 90%;
     height: 94vh;
