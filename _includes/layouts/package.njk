@@ -36,16 +36,18 @@ templateClass: tmpl-post
                                     {% for brand in brands %}
                                    
                                         {% if brand.id == unit.brandid %}
-                                         {% if brand.country %}
-                                                    {% for flag in countries %}
-                                                    {% if brand.country == flag.id %}
-                                                        <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="35" style="position:relative;top:-35px;">
-                                                    {% endif %}
-                                                    {% endfor %}
-                                                {% endif %}
+                                       
                                             {% if brand.logo %}
 <img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:200px">
                                             {% endif %}
+
+                                              {% if brand.country %}
+                                                    {% for flag in countries %}
+                                                    {% if brand.country == flag.id %}
+                                                        <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30">
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                {% endif %}
                                             
                                         {% endif %}
                                     {% endfor %}
