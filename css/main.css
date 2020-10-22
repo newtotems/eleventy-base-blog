@@ -692,6 +692,8 @@ img[src$='#img-header'] {
 
 .blog-nav {
     margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .blog-nav li {
