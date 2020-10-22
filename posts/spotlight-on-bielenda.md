@@ -1,13 +1,13 @@
 ---
 title: Spotlight On Bielenda
 date: 2020-10-22
-limage: /img/blog/spotlight-on-bielenda-rinse-peel-masks.jpg
+limage: /img/blog/spotlight-bielenda-rinse-peel-masks.jpg
 tags:
   - site
 layout: layouts/post.njk
 ---
 
-![Spotlight on Bielenda, Polish rinse and peel beauty mask brand](https://www.thefacepack.com/img/blog/spotlight-on-bielenda-rinse-peel-masks.jpg#title)
+![Spotlight on Bielenda, Polish rinse and peel beauty mask brand](https://www.thefacepack.com/img/blog/spotlight-bielenda-rinse-peel-masks.jpg#title)
 
 <em>In the first of our Spotlight series - where we take a look at the best sheet, rinse and peel beauty face mask brands from all over the world - we're focussing on <strong>Bielenda</strong>, a hot beauty and skin care brand from Poland specialising in rinse and peel off masks utilising a large variety of ingredients and textures...</em>
 
