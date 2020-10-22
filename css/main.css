@@ -872,7 +872,6 @@ img[src$='#img-header'] {
     background-size: cover;
     background-position: center;
     color: #fff;
-    font-weight: 600;
     padding-top: 100px;
     margin: 0 -15px;
     display: block;
@@ -884,6 +883,12 @@ img[src$='#img-header'] {
     font-weight: 600;
     line-height: 2;
     padding-bottom: 2px;
+}
+
+.callout .lead {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 
