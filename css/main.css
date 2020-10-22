@@ -671,6 +671,7 @@ img[src$='#img-header'] {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
+    margin: 3rem 0 .5rem;
 }
 
 .blog-post em {
