@@ -26,6 +26,11 @@ h6 {
     font-weight: 400;
 }
 
+header {
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
 .website-contact-form label {
     display: block;
     text-transform: uppercase;
