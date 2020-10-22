@@ -13,8 +13,15 @@ templateClass: tmpl-post
                 {% set fname = customer.firstname %}
                 <section class="row blog-post justify-content-center d-flex d-print-none">
                     <div class="col-lg-6 pt-4 mt-4 row">
-                        <h1 class="row d-flex d-print-none text-center" style="width:100%">Here's whats in your pack this month,  {{fname}}</h1>
-                        <p class="d-flex d-print-none text-center" style="width:100%">Remember, each pack is unique to you! Mention <strong> #thefacepack </strong> and tag <a href="https://instagram.com/the.face.pack" target="_blank">@the.face.pack</a> when sharing your unboxings.</p>
+                        <h1 class="row d-flex d-print-none text-center" style="width:100%">Here's whats in your pack this month,
+                            {{fname}}</h1>
+                        <p class="d-flex d-print-none text-center" style="width:100%">Remember, each pack is unique to you! Mention
+                            <strong>
+                                #thefacepack
+                            </strong>
+                            and tag
+                            <a href="https://instagram.com/the.face.pack" target="_blank">@the.face.pack</a>
+                            when sharing your unboxings.</p>
                     </div>
                 </section>
                 {% include "layouts/label.njk" %}
@@ -29,37 +36,46 @@ templateClass: tmpl-post
                     {% for mask in item.contents %}
                         {% if unit.itemid == mask %}
                             <div class="row pack-item">
-                                <div class="col-md-4 row">
-                                    <div class="col-lg-12">
-                                    {% for image in unit.imgs %}
-                                        <img src="{{image}}" alt="" height="200"/>
-                                    {% endfor %}
-                                    {% for brand in brands %}
-                                    </div>
-                                   
-                                        {% if brand.id == unit.brandid %}
-                                       <div class="col-lg-6">
-                                            {% if brand.logo %}
-<div><img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:200px"></div>
-                                            {% endif %}
+                                <div class="col-md-4">
 
-                                              {% if brand.country %}
+                                    <div class="row">
+<div class="col-lg-12">
+                                        {% for image in unit.imgs %}
+                                            <img src="{{image}}" alt="" height="200"/>
+                                        {% endfor %}
+                                        </div>
+
+                                        {% for brand in brands %}
+
+                                            {% if brand.id == unit.brandid %}
+
+                                                {% if brand.logo %}
+                                                <div class="col-lg-6">
+                                                    <img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:200px">
+                                                     </div>
+                                                {% endif %}
+                                               
+
+                                                {% if brand.country %}
                                                     {% for flag in countries %}
-                                                    {% if brand.country == flag.id %}
-                                                        <div><img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30"></div>
-                                                    {% endif %}
+                                                        {% if brand.country == flag.id %}
+                                                            <div class="col-lg-6">
+                                                                <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30">
+                                                                </div>
+                                                        {% endif %}
                                                     {% endfor %}
                                                 {% endif %}
+
+                                            {% endif %}
+                                        {% endfor %}
+                                        {% if unit.url %}
+                                            <div class="col-lg-12">
+                                                <a href="{{unit.url}}" target="_blank" class="btn btn-lg btn-primary">More Info</a>
                                             </div>
                                         {% endif %}
-                                    {% endfor %}
-                                    {% if unit.url %}
-                                    <div class="col-lg-6">
-                                        <p>
-                                            <a href="{{unit.url}}" target="_blank" class="btn btn-lg btn-primary">More Info</a>
-                                        </p>
+
                                     </div>
-                                    {% endif %}
+
                                 </div>
                                 <div class="col-md-8 text-left">
                                     <h2>{{unit.name}}</h2>
