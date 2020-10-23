@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+{% set websiteroot = 'https://www.thefacepack.com' %}
+<head>
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-5KBBM8V"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177000090-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-177000090-2');
+    </script>
+    <title>The Face Pack</title>
+    <meta name="description" content="The best sheet, rinse and peel beauty facial masks
+        from around the world delivered monthly to your door - join the ultimate face mask subscription club">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="facebook-domain-verification" content="d7x1296qgomz55scht1cwe9fvye52u" />
+
+    <meta property="og:url" content="https://www.thefacepack.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Face Pack" />
+    <meta property="og:description" content="The ultimate sheet, rinse and peel face mask subscription club!" />
+    <meta property="og:image" content="//www.thefacepack.com/img/fb.jpg" />
+    <meta property="fb:app_id" content="628841017828335" />
+
+    <link href='https://www.google-analytics.com' rel='preconnect' crossorigin>
+    <link rel="preload" href="/css/WCManoNegraBoldBta.woff" as="font" type="font/woff" crossorigin>
+
+    <link rel="icon" type="image/png" href="//www.thefacepack.com/img/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq)
+                return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n
+                    .callMethod
+                    .apply(n, arguments) :
+                    n
+                    .queue
+                    .push(arguments)
+            };
+            if (!f._fbq)
+                f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s
+                .parentNode
+                .insertBefore(t, s)
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '342636430421250');
+        fbq('track', 'PageView');
+    </script>
+    <script src="https://js.stripe.com/v3"></script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=342636430421250&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+
+{% include 'layouts/header.njk' %}
+  
+                    <main {% if templateclass %} class="{{ templateClass }}" {% endif %}>
+                        {{ content | safe }}
+                    </main>
+
+ {% include 'layouts/footer.njk' %}
+
+    </body>
+</html>
