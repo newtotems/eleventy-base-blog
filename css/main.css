@@ -522,6 +522,7 @@ main {
     line-height: 0.1em;
     margin-right: 10px;
     vertical-align: -0.4em;
+    font-family: serif;
 }
 
 .blockquote p::after {
@@ -531,6 +532,7 @@ main {
     line-height: 0.1em;
     margin-right: 20px;
     vertical-align: -40px;
+    font-family: serif;
 }
 
 .product-wrapper .select {
