@@ -454,7 +454,7 @@ main {
 
 @keyframes pulse-animation {
     0% {
-        opacity: 1;
+        opacity: 0.8;
         transform: scale(1);
     }
     50% {
