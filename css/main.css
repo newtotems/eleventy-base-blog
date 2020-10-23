@@ -535,6 +535,11 @@ main {
     font-family: serif;
 }
 
+.blockquote--product-rating {
+    display: inline-block;
+    margin: 0 auto;
+}
+
 .product-wrapper .select {
     background: #fff;
     padding: 20px;
