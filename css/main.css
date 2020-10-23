@@ -167,6 +167,14 @@ h4 {
     max-height: 40px;
 }
 
+.fp__brand-logos h5 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    color: #0a1f2d;
+    font-weight: 800;
+}
+
 .fp__subprice {
     font-family: 'wc_mano_negra_btabold';
     font-size: 5rem;
