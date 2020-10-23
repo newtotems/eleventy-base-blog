@@ -538,6 +538,7 @@ main {
 .blockquote--product-rating {
     display: inline-block;
     margin: 0 auto;
+    color: #ec4471;
 }
 
 .product-wrapper .select {
