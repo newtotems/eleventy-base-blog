@@ -163,6 +163,10 @@ h4 {
     font-size: 3rem;
 }
 
+.fp__brand-logos img {
+    max-height: 40px;
+}
+
 .fp__subprice {
     font-family: 'wc_mano_negra_btabold';
     font-size: 5rem;
