@@ -434,6 +434,7 @@ main {
 .pulse {
     overflow: visible;
     position: relative;
+    z-index: 100;
 }
 
 .pulse:before {
@@ -458,11 +459,11 @@ main {
     }
     50% {
         opacity: 0;
-        transform: scale(1.5);
+        transform: scale(1.5, 1.2);
     }
     100% {
         opacity: 0;
-        transform: scale(1.5);
+        transform: scale(1.5, 1.2);
     }
 }
 
