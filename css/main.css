@@ -116,6 +116,7 @@ a {
     margin: 0;
     text-align: center;
     font-size: 14px;
+    z-index: 101;
 }
 
 .cc-banner,
@@ -993,6 +994,7 @@ img[src$='#img-header'] {
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+    margin: 10px 0;
 }
 
 .slick-list {
@@ -1055,6 +1057,7 @@ img[src$='#img-header'] {
 
 .slick-slide img {
     display: block;
+    padding: 0 10px;
 }
 
 .slick-slide.slick-loading img {
