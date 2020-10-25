@@ -558,10 +558,6 @@ main {
     bottom: -30px;
 }
 
-.product-wrapper .carousel-item {
-    border: 1px solid #efefef;
-}
-
 .product-wrapper h1 {
     font-size: 2.8rem;
 }
