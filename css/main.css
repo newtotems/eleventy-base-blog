@@ -492,6 +492,7 @@ main {
 
 .product-wrapper h1 {
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .product-wrapper h2 {
