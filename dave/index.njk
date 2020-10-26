@@ -74,6 +74,22 @@ renderData:
                                                         {% endfor %}
                                                     </tr>
                                                 {% endfor %}
+
+
+ {# loop over the seatCounts and add them up #}
+                                {% for item in order.contents %}
+
+                                    {% for mask in stock %}
+                                        {% if item == mask.itemid %}
+                                            {% set totalcost = totalcost + mask.cost %}
+                                        {% endif %}
+                                        {% endfor%}
+
+                                    {% endfor %}
+
+                                    {% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost %}
+                                    
+
                                                 <tr>
                                                     <td>Postage</td>
                                                     <td>{{order.postage}}</td>
@@ -90,7 +106,12 @@ renderData:
                                                     <td>Envelopes</td>
                                                     <td>{{envelopecost}}</td>
                                                 </tr>
+                                                <tr>
+                                                    <td>&nbsp;  </td>
+                                                    <td> &pound; {{ totalcost | round(2)}}</td>
+                                                </tr>
                                             </tbody>
+
                                         </table>
 
                                     </div>
@@ -99,19 +120,7 @@ renderData:
                             </td>
                             <td>
 
-                                {# loop over the seatCounts and add them up #}
-                                {% for item in order.contents %}
-
-                                    {% for mask in stock %}
-                                        {% if item == mask.itemid %}
-                                            {% set totalcost = totalcost + mask.cost %}
-                                        {% endif %}
-                                        {% endfor%}
-
-                                    {% endfor %}
-
-                                    {% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost %}
-                                    
+                               
                                     &pound; {{ totalcost | round(2)}}
 
                                 </td>
