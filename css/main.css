@@ -1102,6 +1102,9 @@ img[src$='#img-header'] {
     .fp__price {
         height: 150px;
     }
+    .free-shipping {
+        letter-spacing: 2px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
