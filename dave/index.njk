@@ -8,8 +8,7 @@ renderData:
 <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 <div class="field">
-  <input type="{{ type }}" name="{{ name }}"
-         value="{{ value | escape }}" />
+    <input type="{{ type }}" name="{{ name }}" value="{{ value | escape }}"/>
 </div>
 
 <div class="container">
@@ -33,10 +32,10 @@ renderData:
 
                     {% for order in packages %}
 
-{% set totalcost = 0 %}
-{% set insertcost = 0.12 %}
-{% set stickercost = 0.42 %}
-{% set envelopecost = 0.24 %}
+                        {% set totalcost = 0 %}
+                        {% set insertcost = 0.12 %}
+                        {% set stickercost = 0.42 %}
+                        {% set envelopecost = 0.24 %}
 
                         <tr>
                             <td scope="row row justify-content-center">{{order.packageid}}</td>
@@ -50,109 +49,119 @@ renderData:
                             </td>
                             <td>
 
-                                <table class="table">
-                                    <tbody>
-                                        {% for item in order.contents %}
-                                            <tr>
-                                                {% for mask in stock %}
-                                                    {% if item == mask.itemid %}
+                                 <a class="btn btn-primary" data-toggle="collapse" href="#item{{loop.index}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+    View details
+  </a>
 
-                                                        <td>
-                                                            {{mask.name}}
-                                                        </td>
-                                                        <td>
-                                                            {{mask.cost}}
-                                                        </td>
+                                <div class="collapse" id="item{{loop.index}}">
+                                    <div class="card card-body">
 
-                                                    {% endif %}
+                                        <table class="table">
+                                            <tbody>
+                                                {% for item in order.contents %}
+                                                    <tr>
+                                                        {% for mask in stock %}
+                                                            {% if item == mask.itemid %}
+
+                                                                <td>
+                                                                    {{mask.name}}
+                                                                </td>
+                                                                <td>
+                                                                    {{mask.cost}}
+                                                                </td>
+
+                                                            {% endif %}
+                                                        {% endfor %}
+                                                    </tr>
                                                 {% endfor %}
-                                            </tr>
-                                        {% endfor %}
-                                        <tr>
-                                            <td>Postage</td>
-                                            <td>{{order.postage}}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Insert</td>
-                                            <td>{{insertcost}}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Stickers</td>
-                                            <td>{{stickercost}}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Envelopes</td>
-                                            <td>{{envelopecost}}</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                                <tr>
+                                                    <td>Postage</td>
+                                                    <td>{{order.postage}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Insert</td>
+                                                    <td>{{insertcost}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stickers</td>
+                                                    <td>{{stickercost}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Envelopes</td>
+                                                    <td>{{envelopecost}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
 
                             </td>
                             <td>
 
-{# loop over the seatCounts and add them up #}
- {% for item in order.contents %}
+                                {# loop over the seatCounts and add them up #}
+                                {% for item in order.contents %}
 
- {% for mask in stock %}
- {% if item == mask.itemid %}
-  {% set totalcost = totalcost + mask.cost %}
-{% endif %}
-{% endfor%}
+                                    {% for mask in stock %}
+                                        {% if item == mask.itemid %}
+                                            {% set totalcost = totalcost + mask.cost %}
+                                        {% endif %}
+                                        {% endfor%}
 
-{% endfor %}
+                                    {% endfor %}
 
-{% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost %}
-total cost: {{ totalcost | round(2)}}
+                                    {% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost %}
+                                    total cost:
+                                    {{ totalcost | round(2)}}
 
+                                </td>
+                                <td>@mdo</td>
+                            </tr>
 
-                            </td>
-                            <td>@mdo</td>
-                        </tr>
+                        {% endfor %}
 
-                    {% endfor %}
+                    </tbody>
+                </table>
 
-                </tbody>
-            </table>
+            </div>
 
         </div>
 
     </div>
 
-</div>
+    <script>
+        // Open the modal
+        netlifyIdentity.open();
 
-<script>
-    // Open the modal
-    netlifyIdentity.open();
+        // Get the current user:
+        // Available after on('init') is invoked
+        const user = netlifyIdentity.currentUser();
 
-    // Get the current user:
-    // Available after on('init') is invoked
-    const user = netlifyIdentity.currentUser();
+        // Bind to events
+        netlifyIdentity.on('init', user => console.log('init', user));
+        netlifyIdentity.on('login', user => console.log('login', user));
+        netlifyIdentity.on('logout', () => console.log('Logged out'));
+        netlifyIdentity.on('error', err => console.error('Error', err));
+        netlifyIdentity.on('open', () => console.log('Widget opened'));
+        netlifyIdentity.on('close', () => console.log('Widget closed'));
 
-    // Bind to events
-    netlifyIdentity.on('init', user => console.log('init', user));
-    netlifyIdentity.on('login', user => console.log('login', user));
-    netlifyIdentity.on('logout', () => console.log('Logged out'));
-    netlifyIdentity.on('error', err => console.error('Error', err));
-    netlifyIdentity.on('open', () => console.log('Widget opened'));
-    netlifyIdentity.on('close', () => console.log('Widget closed'));
+        // Unbind from events
+        netlifyIdentity.off('login'); // to unbind all registered handlers
+        netlifyIdentity.off('login', handler); // to unbind a single handler
 
-    // Unbind from events
-    netlifyIdentity.off('login'); // to unbind all registered handlers
-    netlifyIdentity.off('login', handler); // to unbind a single handler
+        // Close the modal
+        netlifyIdentity.close();
 
-    // Close the modal
-    netlifyIdentity.close();
+        // Log out the user
+        netlifyIdentity.logout();
 
-    // Log out the user
-    netlifyIdentity.logout();
+        // Refresh the user's JWT
+        // Call in on('login') handler to ensure token refreshed after it expires (1hr)
+        // Note: this method returns a promise.
+        netlifyIdentity
+            .refresh()
+            .then((jwt) => console.log(jwt))
 
-    // Refresh the user's JWT
-    // Call in on('login') handler to ensure token refreshed after it expires (1hr)
-    // Note: this method returns a promise.
-    netlifyIdentity
-        .refresh()
-        .then((jwt) => console.log(jwt))
-
-    // Change language
-    netlifyIdentity.setLocale('en');
-</script>
+        // Change language
+        netlifyIdentity.setLocale('en');
+    </script>
