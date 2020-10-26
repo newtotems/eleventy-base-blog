@@ -21,6 +21,7 @@ renderData:
             <table class="table">
                 <thead>
                     <tr>
+                        <th scope="col">Date</th>
                         <th scope="col">Pack ID</th>
                         <th scope="col">Customer Name</th>
                         <th scope="col">Details</th>
@@ -60,7 +61,12 @@ renderData:
                         {% set totalstripecharges = 0 %}
 
                         <tr>
-                            <td scope="row row justify-content-center">{{order.packageid}}</td>
+                             <td scope="row row justify-content-center">
+                                Date
+                                </td>
+                            <td scope="row row justify-content-center">
+                                <a href="//thefacepack.com/packs/{{order.packageid}}" target="_blank">{{order.packageid}}</a>
+                                </td>
                             <td>
                                 {% for customer in customers %}
                                     {% if customer.customerid == order.customer %}
