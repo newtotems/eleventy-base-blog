@@ -14,7 +14,7 @@ renderData:
 
 <div class="container">
     <div data-netlify-identity-button="data-netlify-identity-button">Login</div>
-    <div class="row">
+    <div class="row justify-content-center">
 
         <div class="col-lg-6">
             <h2>Profit</h2>
@@ -32,6 +32,11 @@ renderData:
                 <tbody>
 
                     {% for order in packages %}
+
+{% set totalcost = 0 %}
+{% set insertcost = 0.12 %}
+{% set stickercost = 0.42 %}
+{% set envelopecost = 0.24 %}
 
                         <tr>
                             <td scope="row row justify-content-center">{{order.packageid}}</td>
@@ -69,24 +74,21 @@ renderData:
                                         </tr>
                                         <tr>
                                             <td>Insert</td>
-                                            <td>0.12</td>
+                                            <td>{{insertcost}}</td>
                                         </tr>
                                         <tr>
                                             <td>Stickers</td>
-                                            <td>0.42</td>
+                                            <td>{{stickercost}}</td>
                                         </tr>
                                         <tr>
                                             <td>Envelopes</td>
-                                            <td>0.24</td>
+                                            <td>{{envelopecost}}</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
                             </td>
                             <td>
-                                
-{# define and intialize our variables outside the loop #}
-{% set totalcost = 0 %}
 
 {# loop over the seatCounts and add them up #}
  {% for item in order.contents %}
@@ -96,7 +98,7 @@ renderData:
   {% set totalcost = totalcost + mask.cost %}
 {% endif %}
 {% endfor%}
-{% set totalcost = totalcost + order.postage + 0.12 + .042 + 0.24 %}
+{% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost %}
 
 
 {% endfor %}
