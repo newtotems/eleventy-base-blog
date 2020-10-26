@@ -86,25 +86,24 @@ renderData:
                             <td>
                                 
 {# define and intialize our variables outside the loop #}
-{% set maskstotal = 0 %}
+{% set totalcost = 0 %}
 
 {# loop over the seatCounts and add them up #}
  {% for item in order.contents %}
 
  {% for mask in stock %}
  {% if item == mask.itemid %}
- 
-  {% set maskstotal = maskstotal + mask.cost %}
+  {% set totalcost = totalcost + mask.cost %}
 {% endif %}
 {% endfor%}
-
+{% set totalcost = totalcost + order.postage + 0.12 + .042 + 0.24 %}
 
 
 {% endfor %}
 
 
 {# now we can output them: #}
-masks total: {{ maskstotal }}
+total cost: {{ totalcost | round(2)}}
 
 
                             </td>
