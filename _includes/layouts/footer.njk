@@ -69,7 +69,7 @@
 
             <div class="col-12 text-center">
                 <div class="footer-copyright text-center">
-                    <div><img src="/img/Powered-by-Stripe---black.png" alt="powered by Stripe" width="120"></div>
+                    <div style="opacity: 0.5;margin: 0 0 10px;"><img src="/img/Powered-by-Stripe---black.png" alt="powered by Stripe" width="120"></div>
                     &copy; 2020 The Face Pack</div>
             </div>
 
@@ -186,28 +186,28 @@ var stripe = Stripe('pk_live_51HUpCrCazeDg6hkd0SO3AKqg9KHrV1SmLforiwYhAZHhohRB9d
 var checkoutButton_1 = document.getElementById('checkout-button-price_1HUptdCazeDg6hkd2trImC87');
 if (checkoutButton_1) {
 checkoutButton_1.addEventListener('click', function () {
-stripe
-    .redirectToCheckout({
-        lineItems: [
-            {
-                price: 'price_1HUptdCazeDg6hkd2trImC87',
-                quantity: 1
+    stripe
+        .redirectToCheckout({
+            lineItems: [
+                {
+                    price: 'price_1HUptdCazeDg6hkd2trImC87',
+                    quantity: 1
+                }
+            ],
+            mode: 'subscription',
+            successUrl: window.location.protocol + '//www.thefacepack.com/thanks-for-your-order',
+            cancelUrl: window.location.protocol + '//www.thefacepack.com/',
+            billingAddressCollection: 'required',
+            shippingAddressCollection: {
+                allowedCountries: ['GB']
             }
-        ],
-        mode: 'subscription',
-        successUrl: window.location.protocol + '//www.thefacepack.com/thanks-for-your-order',
-        cancelUrl: window.location.protocol + '//www.thefacepack.com/',
-        billingAddressCollection: 'required',
-        shippingAddressCollection: {
-            allowedCountries: ['GB']
-        }
-    })
-    .then(function (result) {
-        if (result.error) {
-            var displayError = document.getElementById('error-message');
-            displayError.textContent = result.error.message;
-        }
-    });
+        })
+        .then(function (result) {
+            if (result.error) {
+                var displayError = document.getElementById('error-message');
+                displayError.textContent = result.error.message;
+            }
+        });
 });
 };
 })();
@@ -220,28 +220,28 @@ var stripe = Stripe('pk_live_51HUpCrCazeDg6hkd0SO3AKqg9KHrV1SmLforiwYhAZHhohRB9d
 var checkoutButton_2 = document.getElementById('checkout-button-price_1HUpsQCazeDg6hkdVhGZ4b9l');
 if (checkoutButton_2) {
 checkoutButton_2.addEventListener('click', function () {
-stripe
-    .redirectToCheckout({
-        lineItems: [
-            {
-                price: 'price_1HUpsQCazeDg6hkdVhGZ4b9l',
-                quantity: 1
+    stripe
+        .redirectToCheckout({
+            lineItems: [
+                {
+                    price: 'price_1HUpsQCazeDg6hkdVhGZ4b9l',
+                    quantity: 1
+                }
+            ],
+            mode: 'subscription',
+            successUrl: window.location.protocol + '//www.thefacepack.com/thanks-for-your-order',
+            cancelUrl: window.location.protocol + '//www.thefacepack.com/',
+            billingAddressCollection: 'required',
+            shippingAddressCollection: {
+                allowedCountries: ['GB']
             }
-        ],
-        mode: 'subscription',
-        successUrl: window.location.protocol + '//www.thefacepack.com/thanks-for-your-order',
-        cancelUrl: window.location.protocol + '//www.thefacepack.com/',
-        billingAddressCollection: 'required',
-        shippingAddressCollection: {
-            allowedCountries: ['GB']
-        }
-    })
-    .then(function (result) {
-        if (result.error) {
-            var displayError = document.getElementById('error-message');
-            displayError.textContent = result.error.message;
-        }
-    });
+        })
+        .then(function (result) {
+            if (result.error) {
+                var displayError = document.getElementById('error-message');
+                displayError.textContent = result.error.message;
+            }
+        });
 });
 };
 })();
