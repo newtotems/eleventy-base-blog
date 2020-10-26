@@ -11,48 +11,67 @@ renderData:
     <div data-netlify-identity-button="data-netlify-identity-button">Login</div>
     <div class="row">
 
-    <div class="col-lg-6">
-        <h2>Profit</h2>
+        <div class="col-lg-6">
+            <h2>Profit</h2>
 
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Pack ID</th>
+                        <th scope="col">Customer Name</th>
+                        <th scope="col">Details</th>
+                        <th scope="col">Total Cost</th>
+                        <th scope="col">Profit</th>
+                    </tr>
+                </thead>
+                <tbody>
 
+                    {% for order in packages %}
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Pack</th>
-      <th scope="col">Details</th>
-      <th scope="col">Total Cost</th>
-      <th scope="col">Profit</th>
-    </tr>
-  </thead>
-  <tbody>
+                        <tr>
+                            <td scope="row row justify-content-center">{{order.packageid}}</td>
+                            <td>
+                                {% for customer in customers %}
+                                    {% if customer.customerid == order.customer %}
+                                        {{customer.firstname}}
+                                        {{customer.lastname}}
+                                    {% endif %}
+                                {% endfor %}
+                            </td>
+                            <td>
 
+                                <table class="table">
+                                    <tbody>
+                                        {% for item in order.contents %}
+                                            <tr>
+                                                {% for mask in stock %}
+                                                    {% if item == mask.itemid %}
 
-{% for order in packages %}
+                                                        <td>
+                                                            {{mask.name}}
+                                                        </td>
+                                                        <td>
+                                                            {{mask.cost}}
+                                                        </td>
 
-    <tr>
-      <th scope="row">{{order.packageid}}</th>
-      <td>
-         {% for customer in customers %}
-         {% if customer.customerid == order.customer %}
-         {{customer.firstname}} {{customer.lastname}}
-         {% endif %}
-         {% endfor %}
-      </td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
 
-{% endfor %}
+                            </td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
 
-  </tbody>
-</table>
+                    {% endfor %}
 
+                </tbody>
+            </table>
 
-
-
-
-    </div>
+        </div>
 
     </div>
 
