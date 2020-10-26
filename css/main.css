@@ -709,6 +709,10 @@ main {
     padding: 0;
 }
 
+.modal-dialog-600 {
+    max-width: 800px;
+}
+
 .testimonial {
     padding-bottom: 40px;
 }
