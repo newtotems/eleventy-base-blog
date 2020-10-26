@@ -5,46 +5,92 @@ description: Discover the best sheet, rinse and peel masks from around the world
 renderData:
     title: "Subscribe to the best sheet, rinse and peel beauty face mask subscription club - join The Face Pack!"
 ---
-  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
- <div data-netlify-identity-menu></div>
+<div class="container">
+    <div data-netlify-identity-button="data-netlify-identity-button">Login</div>
+    <div class="row">
 
-  <!-- Add a simpler button:
-    Simple button that will open the modal.
-  -->
-  <div data-netlify-identity-button>Login with Netlify Identity</div>
+    <div class="col-lg-6">
+        <h2>Profit</h2>
+
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Pack</th>
+      <th scope="col">Details</th>
+      <th scope="col">Total Cost</th>
+      <th scope="col">Profit</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+{% for order in packages %}
+
+    <tr>
+      <th scope="row">{{order.packageid}}</th>
+      <td>
+         {% for customer in customers %}
+         {% if customer.customerid == order.customer %}
+         {{customer.firstname}} {{customer.lastname}}
+         {% endif %}
+         {% endfor %}
+      </td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+
+{% endfor %}
+
+  </tbody>
+</table>
+
+
+
+
+
+    </div>
+
+    </div>
+
+</div>
 
 <script>
     // Open the modal
-netlifyIdentity.open();
+    netlifyIdentity.open();
 
-// Get the current user:
-// Available after on('init') is invoked
-const user = netlifyIdentity.currentUser();
+    // Get the current user:
+    // Available after on('init') is invoked
+    const user = netlifyIdentity.currentUser();
 
-// Bind to events
-netlifyIdentity.on('init', user => console.log('init', user));
-netlifyIdentity.on('login', user => console.log('login', user));
-netlifyIdentity.on('logout', () => console.log('Logged out'));
-netlifyIdentity.on('error', err => console.error('Error', err));
-netlifyIdentity.on('open', () => console.log('Widget opened'));
-netlifyIdentity.on('close', () => console.log('Widget closed'));
+    // Bind to events
+    netlifyIdentity.on('init', user => console.log('init', user));
+    netlifyIdentity.on('login', user => console.log('login', user));
+    netlifyIdentity.on('logout', () => console.log('Logged out'));
+    netlifyIdentity.on('error', err => console.error('Error', err));
+    netlifyIdentity.on('open', () => console.log('Widget opened'));
+    netlifyIdentity.on('close', () => console.log('Widget closed'));
 
-// Unbind from events
-netlifyIdentity.off('login'); // to unbind all registered handlers
-netlifyIdentity.off('login', handler); // to unbind a single handler
+    // Unbind from events
+    netlifyIdentity.off('login'); // to unbind all registered handlers
+    netlifyIdentity.off('login', handler); // to unbind a single handler
 
-// Close the modal
-netlifyIdentity.close();
+    // Close the modal
+    netlifyIdentity.close();
 
-// Log out the user
-netlifyIdentity.logout();
+    // Log out the user
+    netlifyIdentity.logout();
 
-// Refresh the user's JWT
-// Call in on('login') handler to ensure token refreshed after it expires (1hr)  
-// Note: this method returns a promise.
-netlifyIdentity.refresh().then((jwt)=>console.log(jwt))
+    // Refresh the user's JWT
+    // Call in on('login') handler to ensure token refreshed after it expires (1hr)
+    // Note: this method returns a promise.
+    netlifyIdentity
+        .refresh()
+        .then((jwt) => console.log(jwt))
 
-// Change language
-netlifyIdentity.setLocale('en');
+    // Change language
+    netlifyIdentity.setLocale('en');
 </script>
