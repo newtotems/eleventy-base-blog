@@ -1104,6 +1104,7 @@ img[src$='#img-header'] {
     }
     .free-shipping {
         letter-spacing: 2px;
+        padding: 8px 0;
     }
 }
 
