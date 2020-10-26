@@ -54,7 +54,7 @@ renderData:
 
                                         {% for plan in plans %}
                                           {% if plan.planid == customer.plan %}
-                                          
+                                          yes
                                              {% set planprice = plan.price %}
                                              {% set stripepaypercentamount = planprice * stripe_payment_percent %}
                                              {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge  %}
