@@ -112,7 +112,7 @@ renderData:
 
                                     {% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost %}
                                     
-                                    {{ totalcost | round(2)}}
+                                    &pound; {{ totalcost | round(2)}}
 
                                 </td>
                                 <td>@mdo</td>
