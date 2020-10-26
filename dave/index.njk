@@ -35,6 +35,11 @@ renderData:
 
 
                     {% for customer in customers %}
+                    {% set planprice %}
+                    {% set stripepaypercentamount %}
+                    {% set stripepaycosts %}
+                    {% set stripebillingcosts %}
+                    {% set totalstripecharges %}
                                     {% if customer.customerid == order.customer %}
 
                                         {% for plan in plans %}
