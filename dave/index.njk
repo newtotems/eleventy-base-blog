@@ -33,6 +33,24 @@ renderData:
 
                     {% for order in packages %}
 
+
+                    {% for customer in customers %}
+                                    {% if customer.customerid == order.customer %}
+
+                                        {% for plan in plans %}
+                                          {% if plan.planid == customer.plan %}
+                                          
+                                             {% set planprice = plan.price %}
+                                             {% set stripepaypercentamount = planprice * stripe_payment_percent %}
+                                             {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge  %}
+                                             {% set stripebillingcosts = planprice * stripe_billing_percent  %}
+                                             {% set totalstripecharges = stripepaycosts + stripebillingcosts %}
+                                
+                                          {% endif %}
+                                         {% endfor %}
+                                    {% endif %}
+                                {% endfor %}
+
                         {% set totalcost = 0 %}
                         {% set insertcost = 0.12 %}
                         {% set stickercost = 0.42 %}
@@ -120,22 +138,7 @@ renderData:
                                                             <tr>
                                                                 <td>Stripe</td>
                                                                 <td>
-                                                                      {% for customer in customers %}
-                                    {% if customer.customerid == order.customer %}
-
-                                        {% for plan in plans %}
-                                          {% if plan.planid == customer.plan %}
-                                          
-                                             {% set planprice = plan.price %}
-                                             {% set stripepaypercentamount = planprice * stripe_payment_percent %}
-                                             {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge  %}
-                                             {% set stripebillingcosts = planprice * stripe_billing_percent  %}
-                                             {% set totalstripecharges = stripepaycosts + stripebillingcosts %}
-                                   
-                                          {% endif %}
-                                         {% endfor %}
-                                    {% endif %}
-                                {% endfor %}{{totalstripecharges}}
+                                                                      {{totalstripecharges}}
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -180,7 +183,7 @@ renderData:
                                              {% set stripebillingcosts = planprice * stripe_billing_percent  %}
                                              {% set totalstripecharges = stripepaycosts + stripebillingcosts %}
                                    
-                                   totalstripecharges: {{totalstripecharges | round(2)}}
+                                   {{totalstripecharges | round(2)}}
 
                                           {% endif %}
                                          {% endfor %}
