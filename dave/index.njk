@@ -178,7 +178,7 @@ renderData:
                                         {% if customer.customerid == order.customer %}
 
                                             {% for plan in plans %}
-                                                {% if plan.planid == customer.plan %}yes
+                                                {% if plan.planid == customer.plan %}
                                                     {% set planprice2 = plan.price %}
 
 {{planprice2 - totalcost | round(2)}}
