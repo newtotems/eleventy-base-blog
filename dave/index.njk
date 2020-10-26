@@ -86,19 +86,6 @@ renderData:
                             </td>
                             <td>
                                 
-{# define and intialize our variables outside the loop #}
-{% set maskstotal = 0 %}
-
-{# loop over the seatCounts and add them up #}
- {% for item in order.contents %}
-  {% set maskstotal = maskstotal + 1 %}
-{% endfor %}
-
-
-{# now we can output them: #}
-masks total: {{ maskstotal }}
-
-
                             </td>
                             <td>@mdo</td>
                         </tr>
