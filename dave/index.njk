@@ -180,13 +180,14 @@ renderData:
                                             {% for plan in plans %}
                                                 {% if plan.planid == customer.plan %}yes
                                                     {% set planprice2 = plan.price %}
+
+{{planprice2 - totalprice | round(2)}}
+
+
                                                 {% endif %}
                                             {% endfor %}
                                         {% endif %}
                                     {% endfor %}
-
-                                    {{planprice2}}
-                                    {{totalcost}}
 
                                 </td>
                             </tr>
