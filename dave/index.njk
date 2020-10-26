@@ -155,11 +155,10 @@ renderData:
                                              {% set planprice = plan.price %}
                                              {% set stripepaypercentamount = planprice * stripe_payment_percent %}
                                              {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge  %}
-                                             {% set stripebillingcosts = planprice + stripe_billing_percent  %}
-
-                                             plan price {{planprice}} - stripepaypercentamount {{stripepaypercentamount}} - stripepaycosts {{stripepaycosts}} - stripebillingcosts {{stripebillingcosts}}
+                                             {% set stripebillingcosts = planprice * stripe_billing_percent  %}
+                                             {% set totalstripecharges = stripepaycosts + stripebillingcosts %}
                                    
-                                   {{stripepaycosts}} / {{stripebillingcosts}}
+                                   totalstripecharges: {{totalstripecharges}}
 
                                           {% endif %}
                                          {% endfor %}
