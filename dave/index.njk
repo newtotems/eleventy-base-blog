@@ -178,7 +178,20 @@ renderData:
                                 </td>
                                 <td class="text-right">
 
-                                  {{planprice}}
+                                     {% for customer in customers %}
+                                    {% if customer.customerid == order.customer %}
+                                        {{customer.firstname}}
+                                        {{customer.lastname}}
+
+                                         {% for plan in plans %}
+                                          {% if plan.planid == customer.plan %}
+                                             {% set planprice2 = plan.price %}
+                                             {% endif %}
+                                             {% endfor %}
+                                   {% endif %}
+                                   {% endfor %}
+
+                                  {{planprice2}}
                                   {{totalcost}}
 
                                 </td>
