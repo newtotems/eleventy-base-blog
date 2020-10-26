@@ -49,11 +49,11 @@ renderData:
                             </td>
                             <td>
 
-                                 <a class="btn btn-primary" data-toggle="collapse" href="#item{{loop.index}}" role="button" aria-expanded="false" aria-controls="collapseExample">
-    View details
-  </a>
-
-                                <div class="collapse" id="item{{loop.index}}">
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#item{{loop.index}}">
+  Launch demo modal
+</button>
+                           
+                                    <div class="modal fade" id="item{{loop.index}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="card card-body">
 
                                         <table class="table">
