@@ -7,6 +7,7 @@ renderData:
 ---
 <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
+
 <div class="field">
     <input type="{{ type }}" name="{{ name }}" value="{{ value | escape }}"/>
 </div>
@@ -144,10 +145,13 @@ renderData:
 
                                 </td>
                                 <td class="text-right">
+
+{{planprice}}
+
                                    {% set stripepaypercentamount = planprice * stripe_payment_percent %}
                                    {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge  %}
                                    {% set stripebillingcosts = planprice + stripe_billing_percent  %}
-                                   {{stripepaypercentamount}} lll {{stripepaycosts}}
+                                   
                                    {{stripepaycosts}} / {{stripebillingcosts}}
                                 </td>
                             </tr>
