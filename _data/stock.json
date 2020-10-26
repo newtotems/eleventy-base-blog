@@ -8,7 +8,7 @@
         ],
         "url": "",
         "cost": 0,
-        "stock": 2
+        "stock": 1
     },
     {
         "itemid": 2,
@@ -104,7 +104,7 @@
         ],
         "url": "",
         "cost": 0.59,
-        "stock": 24
+        "stock": 23
     },
     {
         "itemid": 10,
@@ -152,7 +152,7 @@
         ],
         "url": "",
         "cost": 0.35,
-        "stock": 12
+        "stock": 11
     },
     {
         "itemid": 14,
@@ -212,7 +212,7 @@
         ],
         "url": "",
         "cost": 0.55,
-        "stock": 24
+        "stock": 23
     },
     {
         "itemid": 19,
@@ -248,6 +248,6 @@
         ],
         "url": "",
         "cost": 0.94,
-        "stock": 12
+        "stock": 11
     }
 ]

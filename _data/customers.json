@@ -2,18 +2,12 @@
         "customerid": 1,
         "firstname": "Lynn",
         "lastname": "Hogg",
+        "plan": 0
+    },
+    {
+        "customerid": 2,
+        "firstname": "Irene",
+        "lastname": "Hogg",
         "plan": 4
-    },
-    {
-        "customerid": 223,
-        "firstname": "Testy",
-        "lastname": "Testerson",
-        "plan": 8
-    },
-    {
-        "customerid": 356,
-        "firstname": "Terrence",
-        "lastname": "Est",
-        "plan": 12
     }
 ]
