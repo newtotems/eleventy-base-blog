@@ -77,14 +77,7 @@ renderData:
                                              {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge  %}
                                              {% set stripebillingcosts = planprice * stripe_billing_percent  %}
                                              {% set totalstripecharges = stripepaycosts + stripebillingcosts %}
-
-
-
-{{planprice}}
-{{totalstripecharges}}
-
-
-                                             
+                                            
                                           {% endif %}
                                          {% endfor %}
                                     {% endif %}
