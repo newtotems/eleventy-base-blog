@@ -704,6 +704,11 @@ main {
     opacity: 1;
 }
 
+.modal-img {
+    margin: 0;
+    padding: 0;
+}
+
 .testimonial {
     padding-bottom: 40px;
 }
