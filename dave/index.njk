@@ -145,7 +145,7 @@ renderData:
                                                             <tr>
                                                                 <td>Stripe</td>
                                                                 <td>
-                                                                      {{totalstripecharges}}
+                                                                      {{totalstripecharges | round(2)}}
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -178,24 +178,8 @@ renderData:
                                 </td>
                                 <td class="text-right">
 
-                                    {% for customer in customers %}
-                                    {% if customer.customerid == order.customer %}
-
-                                        {% for plan in plans %}
-                                          {% if plan.planid == customer.plan %}
-                                          
-                                             {% set planprice = plan.price %}
-                                             {% set stripepaypercentamount = planprice * stripe_payment_percent %}
-                                             {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge  %}
-                                             {% set stripebillingcosts = planprice * stripe_billing_percent  %}
-                                             {% set totalstripecharges = stripepaycosts + stripebillingcosts %}
-                                   
-                                   {{totalstripecharges | round(2)}}
-
-                                          {% endif %}
-                                         {% endfor %}
-                                    {% endif %}
-                                {% endfor %}
+                                   {% set profit = planprice - totalcost }
+                                   {{profit | round(2)}}
 
                                 </td>
                             </tr>
