@@ -91,16 +91,7 @@ renderData:
 
 {# loop over the seatCounts and add them up #}
  {% for item in order.contents %}
-
- {% for mask in stock %}
- {% if item == mask.itemid %}
- 
-  {% set maskstotal = maskstotal + mask.cost %}
-{% endif %}
-{% endfor%}
-
-
-
+  {% set maskstotal = maskstotal + 1 %}
 {% endfor %}
 
 
