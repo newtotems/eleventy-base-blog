@@ -49,79 +49,88 @@ renderData:
                             </td>
                             <td>
 
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#item{{loop.index}}">
-  show
-</button>
-                           
-                                    <div class="modal fade" id="item{{loop.index}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="card card-body">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#item{{loop.index}}">
+                                    show
+                                </button>
 
-                                        <table class="table">
-                                            <tbody>
-                                                {% for item in order.contents %}
-                                                    <tr>
-                                                        {% for mask in stock %}
-                                                            {% if item == mask.itemid %}
+                                <div class="modal fade" id="item{{loop.index}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="card card-body">
 
-                                                                <td>
-                                                                    {{mask.name}}
-                                                                </td>
-                                                                <td>
-                                                                    {{mask.cost}}
-                                                                </td>
+                                                <table class="table">
+                                                    <tbody>
+                                                        {% for item in order.contents %}
+                                                            <tr>
+                                                                {% for mask in stock %}
+                                                                    {% if item == mask.itemid %}
 
-                                                            {% endif %}
+                                                                        <td>
+                                                                            {{mask.name}}
+                                                                        </td>
+                                                                        <td>
+                                                                            {{mask.cost}}
+                                                                        </td>
+
+                                                                    {% endif %}
+                                                                {% endfor %}
+                                                            </tr>
                                                         {% endfor %}
-                                                    </tr>
-                                                {% endfor %}
 
+                                                        {# loop over the seatCounts and add them up #}
+                                                        {% for item in order.contents %}
 
- {# loop over the seatCounts and add them up #}
-                                {% for item in order.contents %}
+                                                            {% for mask in stock %}
+                                                                {% if item == mask.itemid %}
+                                                                    {% set totalcost = totalcost + mask.cost %}
+                                                                {% endif %}
+                                                                {% endfor%}
 
-                                    {% for mask in stock %}
-                                        {% if item == mask.itemid %}
-                                            {% set totalcost = totalcost + mask.cost %}
-                                        {% endif %}
-                                        {% endfor%}
+                                                            {% endfor %}
 
-                                    {% endfor %}
+                                                            {% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost %}
 
-                                    {% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost %}
-                                    
+                                                            <tr>
+                                                                <td>Postage</td>
+                                                                <td>{{order.postage}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Insert</td>
+                                                                <td>{{insertcost}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stickers</td>
+                                                                <td>{{stickercost}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Envelopes</td>
+                                                                <td>{{envelopecost}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>&nbsp;
+                                                                </td>
+                                                                <td>
+                                                                    &pound;
+                                                                    {{ totalcost | round(2)}}</td>
+                                                            </tr>
+                                                        </tbody>
 
-                                                <tr>
-                                                    <td>Postage</td>
-                                                    <td>{{order.postage}}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Insert</td>
-                                                    <td>{{insertcost}}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Stickers</td>
-                                                    <td>{{stickercost}}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Envelopes</td>
-                                                    <td>{{envelopecost}}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>&nbsp;  </td>
-                                                    <td> &pound; {{ totalcost | round(2)}}</td>
-                                                </tr>
-                                            </tbody>
+                                                    </table>
 
-                                        </table>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    </div>
 
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
 
-                            </td>
-                            <td>
+                                </td>
+                                <td>
 
-                               
-                                    &pound; {{ totalcost | round(2)}}
+                                    &pound;
+                                    {{ totalcost | round(2)}}
 
                                 </td>
                                 <td>@mdo</td>
