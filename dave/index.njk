@@ -99,7 +99,7 @@ renderData:
 
                                                             {% endfor %}
 
-                                                            {% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost %}
+                                                            
 
                                                             <tr>
                                                                 <td>Postage</td>
@@ -118,10 +118,32 @@ renderData:
                                                                 <td>{{envelopecost}}</td>
                                                             </tr>
                                                             <tr>
+                                                                <td>Stripe</td>
+                                                                <td>
+                                                                      {% for customer in customers %}
+                                    {% if customer.customerid == order.customer %}
+
+                                        {% for plan in plans %}
+                                          {% if plan.planid == customer.plan %}
+                                          
+                                             {% set planprice = plan.price %}
+                                             {% set stripepaypercentamount = planprice * stripe_payment_percent %}
+                                             {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge  %}
+                                             {% set stripebillingcosts = planprice * stripe_billing_percent  %}
+                                             {% set totalstripecharges = stripepaycosts + stripebillingcosts %}
+                                   
+                                          {% endif %}
+                                         {% endfor %}
+                                    {% endif %}
+                                {% endfor %}{{totalstripecharges}}
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
                                                                 <td>&nbsp;
                                                                 </td>
                                                                 <td>
                                                                     &pound;
+                                                                    {% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost + totalstripecharges %}
                                                                     {{ totalcost | round(2)}}</td>
                                                             </tr>
                                                         </tbody>
@@ -158,7 +180,7 @@ renderData:
                                              {% set stripebillingcosts = planprice * stripe_billing_percent  %}
                                              {% set totalstripecharges = stripepaycosts + stripebillingcosts %}
                                    
-                                   totalstripecharges: {{totalstripecharges}}
+                                   totalstripecharges: {{totalstripecharges | round(2)}}
 
                                           {% endif %}
                                          {% endfor %}
