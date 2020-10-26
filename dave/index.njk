@@ -144,9 +144,9 @@ renderData:
 
                                 </td>
                                 <td class="text-right">
-                                   
-                                   {% set stripepaycosts = (planprice*stripe_payment_percent) + stripe_payment_charge  %}
-                                   {% set stripebillingcosts = (planprice*stripe_payment_percent) + stripe_billing_percent  %}
+                                   {% set stripepaypercentamount = planprice * stripe_payment_percent %}
+                                   {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge  %}
+                                   {% set stripebillingcosts = planprice + stripe_billing_percent  %}
                                    {{stripepaycosts}} / {{stripebillingcosts}}
                                 </td>
                             </tr>
