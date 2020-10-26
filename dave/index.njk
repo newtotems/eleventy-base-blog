@@ -70,14 +70,9 @@ renderData:
                                         {{customer.lastname}}
 
                                          {% for plan in plans %}
-                                          {% if planid == customer.plan %}
+                                          {% if planid == customer.plan %}yes
                                              {% set planprice = plan.price %}
 
-
-
-
-
-                                             {% set planprice = plan.price %}
                                              {% set stripepaypercentamount = planprice * stripe_payment_percent %}
                                              {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge  %}
                                              {% set stripebillingcosts = planprice * stripe_billing_percent  %}
