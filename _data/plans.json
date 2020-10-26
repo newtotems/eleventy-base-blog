@@ -1,0 +1,25 @@
+[{
+        "planid": 0,
+        "name": "test",
+        "products": 0,
+        "price": 0
+    },
+    {
+        "planid": 4,
+        "name": "Fantastic Four",
+        "products": 4,
+        "price": 11.00
+    },
+    {
+        "planid": 8,
+        "name": "Excellent Eight",
+        "products": 4,
+        "price": 20.00
+    },
+    {
+        "planid": 12,
+        "name": "Terrific Twelve",
+        "products": 12,
+        "price": 24.00
+    }
+]

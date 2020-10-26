@@ -37,6 +37,10 @@ renderData:
                         {% set stickercost = 0.42 %}
                         {% set envelopecost = 0.24 %}
 
+                        {% set stripe_payment_percent = 0.014 %}
+                        {% set stripe_payment_charge = 0.20 %}
+                        {% set stripe_billing_percent = 0.005 %}
+
                         <tr>
                             <td scope="row row justify-content-center">{{order.packageid}}</td>
                             <td>
@@ -44,6 +48,12 @@ renderData:
                                     {% if customer.customerid == order.customer %}
                                         {{customer.firstname}}
                                         {{customer.lastname}}
+
+                                         {% for plan in plans %}
+                                          {% if planid == customer.plan %}
+                                             {% set planprice = plan.price %}
+                                          {% endif %}
+                                         {% endfor %}
                                     {% endif %}
                                 {% endfor %}
                             </td>
@@ -127,13 +137,18 @@ renderData:
                                     </div>
 
                                 </td>
-                                <td>
+                                <td class="text-right">
 
                                     &pound;
                                     {{ totalcost | round(2)}}
 
                                 </td>
-                                <td>@mdo</td>
+                                <td class="text-right">
+                                   
+                                   {% set stripepaycosts = planprice*stripe_payment_percent + stripe_payment_charge  %}
+                                   {% set stripebillingcosts = planprice*stripe_payment_percent + stripe_billing_percent  %}
+                                   {{stripepaycosts}} / {{stripebillingcosts}}
+                                </td>
                             </tr>
 
                         {% endfor %}
