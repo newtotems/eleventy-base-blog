@@ -7,7 +7,6 @@ renderData:
 ---
 <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-
 <div class="field">
     <input type="{{ type }}" name="{{ name }}" value="{{ value | escape }}"/>
 </div>
@@ -33,23 +32,22 @@ renderData:
 
                     {% for order in packages %}
 
+                        {% for customer in customers %}
+                            {% if customer.customerid == order.customer %}
 
-                    {% for customer in customers %}
-                                    {% if customer.customerid == order.customer %}
+                                {% for plan in plans %}
+                                    {% if plan.planid == customer.plan %}
 
-                                        {% for plan in plans %}
-                                          {% if plan.planid == customer.plan %}
-                                          
-                                             {% set planprice = plan.price %}
-                                             {% set stripepaypercentamount = planprice * stripe_payment_percent %}
-                                             {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge  %}
-                                             {% set stripebillingcosts = planprice * stripe_billing_percent  %}
-                                             {% set totalstripecharges = stripepaycosts + stripebillingcosts %}
-                                
-                                          {% endif %}
-                                         {% endfor %}
+                                        {% set planprice = plan.price %}
+                                        {% set stripepaypercentamount = planprice * stripe_payment_percent %}
+                                        {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge %}
+                                        {% set stripebillingcosts = planprice * stripe_billing_percent %}
+                                        {% set totalstripecharges = stripepaycosts + stripebillingcosts %}
+
                                     {% endif %}
                                 {% endfor %}
+                            {% endif %}
+                        {% endfor %}
 
                         {% set totalcost = 0 %}
                         {% set insertcost = 0.12 %}
@@ -69,17 +67,17 @@ renderData:
                                         {{customer.firstname}}
                                         {{customer.lastname}}
 
-                                         {% for plan in plans %}
-                                          {% if plan.planid == customer.plan %}
-                                             {% set planprice = plan.price %}
+                                        {% for plan in plans %}
+                                            {% if plan.planid == customer.plan %}
+                                                {% set planprice = plan.price %}
 
-                                             {% set stripepaypercentamount = planprice * stripe_payment_percent %}
-                                             {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge  %}
-                                             {% set stripebillingcosts = planprice * stripe_billing_percent  %}
-                                             {% set totalstripecharges = stripepaycosts + stripebillingcosts %}
-                                            
-                                          {% endif %}
-                                         {% endfor %}
+                                                {% set stripepaypercentamount = planprice * stripe_payment_percent %}
+                                                {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge %}
+                                                {% set stripebillingcosts = planprice * stripe_billing_percent %}
+                                                {% set totalstripecharges = stripepaycosts + stripebillingcosts %}
+
+                                            {% endif %}
+                                        {% endfor %}
                                     {% endif %}
                                 {% endfor %}
                             </td>
@@ -124,8 +122,6 @@ renderData:
 
                                                             {% endfor %}
 
-                                                            
-
                                                             <tr>
                                                                 <td>Postage</td>
                                                                 <td>{{order.postage}}</td>
@@ -145,7 +141,7 @@ renderData:
                                                             <tr>
                                                                 <td>Stripe</td>
                                                                 <td>
-                                                                      {{totalstripecharges | round(2)}}
+                                                                    {{totalstripecharges | round(2)}}
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -178,21 +174,19 @@ renderData:
                                 </td>
                                 <td class="text-right">
 
-                                     {% for customer in customers %}
-                                    {% if customer.customerid == order.customer %}
-                                        {{customer.firstname}}
-                                        {{customer.lastname}}
+                                    {% for customer in customers %}
+                                        {% if customer.customerid == order.customer %}
 
-                                         {% for plan in plans %}
-                                          {% if plan.planid == customer.plan %}
-                                             {% set planprice2 = plan.price %}
-                                             {% endif %}
-                                             {% endfor %}
-                                   {% endif %}
-                                   {% endfor %}
+                                            {% for plan in plans %}
+                                                {% if plan.planid == customer.plan %}yes
+                                                    {% set planprice2 = plan.price %}
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endfor %}
 
-                                  {{planprice2}}
-                                  {{totalcost}}
+                                    {{planprice2}}
+                                    {{totalcost}}
 
                                 </td>
                             </tr>
