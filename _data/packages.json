@@ -1,6 +1,7 @@
 [{
         "packageid": 1113796727,
         "customer": 1,
+        "postage": 0,
         "contents": [
             1,
             2,
@@ -28,6 +29,7 @@
     {
         "packageid": 1464954262,
         "customer": 2,
+        "postage": 1.40,
         "contents": [
             13,
             21,

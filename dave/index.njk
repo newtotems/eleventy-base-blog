@@ -7,6 +7,12 @@ renderData:
 ---
 <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
+<div class="field">
+  <input type="{{ type }}" name="{{ name }}"
+         value="{{ value | escape }}" />
+</div>
+{% endmacro %}
+
 <div class="container">
     <div data-netlify-identity-button="data-netlify-identity-button">Login</div>
     <div class="row">
@@ -42,6 +48,7 @@ renderData:
 
                                 <table class="table">
                                     <tbody>
+                                        {% set total = 0 %}
                                         {% for item in order.contents %}
                                             <tr>
                                                 {% for mask in stock %}
@@ -53,16 +60,34 @@ renderData:
                                                         <td>
                                                             {{mask.cost}}
                                                         </td>
-
+                                                        {% set total = total + mask.cost %}
                                                     {% endif %}
                                                 {% endfor %}
                                             </tr>
                                         {% endfor %}
+                                        <tr>
+                                            <td>Postage</td>
+                                            <td>{{order.postage}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Insert</td>
+                                            <td>0.12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Stickers</td>
+                                            <td>0.42</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Envelopes</td>
+                                            <td>0.24</td>
+                                        </tr>
                                     </tbody>
                                 </table>
 
                             </td>
-                            <td>Otto</td>
+                            <td>
+                                {{total}}
+                            </td>
                             <td>@mdo</td>
                         </tr>
 
