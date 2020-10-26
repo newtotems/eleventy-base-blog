@@ -1,5 +1,6 @@
 [{
         "packageid": 1113796727,
+        "date": "26-10-2020",
         "customer": 1,
         "postage": 0,
         "contents": [
@@ -28,6 +29,7 @@
     },
     {
         "packageid": 1464954262,
+        "date": "26-10-2020",
         "customer": 2,
         "postage": 1.40,
         "contents": [
