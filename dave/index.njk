@@ -146,13 +146,28 @@ renderData:
                                 </td>
                                 <td class="text-right">
 
-{{planprice}}
+ {% for customer in customers %}
+                                    {% if customer.customerid == order.customer %}
+                                        {{customer.firstname}}
+                                        {{customer.lastname}}
 
-                                   {% set stripepaypercentamount = planprice * stripe_payment_percent %}
+                                         {% for plan in plans %}
+                                          {% if planid == customer.plan %}
+                                             {% set planprice = plan.price %}
+
+ {% set stripepaypercentamount = planprice * stripe_payment_percent %}
                                    {% set stripepaycosts = stripepaypercentamount + stripe_payment_charge  %}
                                    {% set stripebillingcosts = planprice + stripe_billing_percent  %}
                                    
                                    {{stripepaycosts}} / {{stripebillingcosts}}
+
+
+                                          {% endif %}
+                                         {% endfor %}
+                                    {% endif %}
+                                {% endfor %}
+
+                                  
                                 </td>
                             </tr>
 
