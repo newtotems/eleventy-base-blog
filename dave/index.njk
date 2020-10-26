@@ -98,13 +98,10 @@ renderData:
   {% set totalcost = totalcost + mask.cost %}
 {% endif %}
 {% endfor%}
-{% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost %}
-
 
 {% endfor %}
 
-
-{# now we can output them: #}
+{% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost %}
 total cost: {{ totalcost | round(2)}}
 
 
