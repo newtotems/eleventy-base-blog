@@ -360,6 +360,10 @@ main {
     fill: currentColor;
 }
 
+.icon:hover {
+    color: #f39bb2;
+}
+
 .icon-instagram {
     margin: 10px 10px 10px 20px;
     float: left;
