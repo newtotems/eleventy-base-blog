@@ -800,6 +800,10 @@ img[src$='#img-header'] {
     width: 100%;
 }
 
+.posts {
+    margin-top: 20px!important;
+}
+
 .blog-post h1 {
     text-transform: uppercase;
     font-weight: 600;
