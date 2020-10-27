@@ -23,7 +23,6 @@ eleventyExcludeFromCollections: true
                         <th scope="col">Date</th>
                         <th scope="col">Pack ID</th>
                         <th scope="col">Customer Name</th>
-                        <th scope="col">Details</th>
                         <th scope="col">Total Cost</th>
                         <th scope="col">Profit</th>
                         <th scope="col">Margin</th>
@@ -88,13 +87,10 @@ eleventyExcludeFromCollections: true
                                     {% endif %}
                                 {% endfor %}
                             </td>
-                            <td>
 
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#item{{loop.index}}">
-                                    Details
-                                </button>
+                                <td class="text-right">
 
-                                <div class="modal fade" id="item{{loop.index}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade" id="item{{loop.index}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-600" role="document">
                                         <div class="modal-content">
                                             <div class="card card-body">
@@ -157,7 +153,10 @@ eleventyExcludeFromCollections: true
                                                                 <td>
                                                                     &pound;
                                                                     {% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost + totalstripecharges %}
-                                                                    {{ totalcost | round(2)}}</td>
+                                                                   <a href="#" data-toggle="modal" data-target="#item{{loop.index}}">
+                                                                       {{ totalcost | round(2)}}
+                                                                       </a>
+                                                                       </td>
                                                             </tr>
                                                         </tbody>
 
@@ -172,8 +171,6 @@ eleventyExcludeFromCollections: true
                                         </div>
                                     </div>
 
-                                </td>
-                                <td class="text-right">
 
                                     &pound;
                                     {{ totalcost | round(2)}}
