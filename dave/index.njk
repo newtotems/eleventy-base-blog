@@ -23,9 +23,10 @@ eleventyExcludeFromCollections: true
                         <th scope="col">Date</th>
                         <th scope="col">Pack ID</th>
                         <th scope="col">Customer Name</th>
-                        <th scope="col">Details</th>
                         <th scope="col">Total Cost</th>
                         <th scope="col">Profit</th>
+                        <th scope="col">Margin</th>
+                        <th scope="col">Details</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -86,10 +87,39 @@ eleventyExcludeFromCollections: true
                                     {% endif %}
                                 {% endfor %}
                             </td>
-                            <td>
+                            
+                                <td class="text-right">
+
+                                    &pound;
+                                    {{ totalcost | round(2)}}
+
+                                </td>
+                                <td class="text-right">
+
+                                    {% for customer in customers %}
+                                        {% if customer.customerid == order.customer %}
+
+                                            {% for plan in plans %}
+                                                {% if plan.planid == customer.plan %}
+                                                    {% set planprice2 = plan.price %}
+
+{{planprice2 - totalcost | round(2)}}
+
+
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endfor %}
+
+                                </td>
+                                <td>
+                                    margin
+                                </td>
+
+                                <td>
 
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#item{{loop.index}}">
-                                    show
+                                    Details
                                 </button>
 
                                 <div class="modal fade" id="item{{loop.index}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -171,30 +201,8 @@ eleventyExcludeFromCollections: true
                                     </div>
 
                                 </td>
-                                <td class="text-right">
-
-                                    &pound;
-                                    {{ totalcost | round(2)}}
-
-                                </td>
-                                <td class="text-right">
-
-                                    {% for customer in customers %}
-                                        {% if customer.customerid == order.customer %}
-
-                                            {% for plan in plans %}
-                                                {% if plan.planid == customer.plan %}
-                                                    {% set planprice2 = plan.price %}
-
-{{planprice2 - totalcost | round(2)}}
 
 
-                                                {% endif %}
-                                            {% endfor %}
-                                        {% endif %}
-                                    {% endfor %}
-
-                                </td>
                             </tr>
 
                         {% endfor %}
