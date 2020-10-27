@@ -351,16 +351,20 @@ main {
     padding: 0;
 }
 
-.icon {
+.icon-external-link1 {
     display: inline-block;
     width: 1.4em;
     height: 1.4em;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
+    color: #ec4471;
+    position: relative;
+    top: -2px;
+    right: -5px;
 }
 
-.icon:hover {
+.icon-external-link1:hover {
     color: #f39bb2;
 }
 
