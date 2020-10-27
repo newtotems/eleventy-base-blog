@@ -199,8 +199,25 @@ eleventyExcludeFromCollections: true
 
                                 </td>
                                 <td>
+
+                                    
+                                    {% for customer in customers %}
+                                        {% if customer.customerid == order.customer %}
+
+                                            {% for plan in plans %}
+                                                {% if plan.planid == customer.plan %}
+                                                    {% set planprice2 = plan.price %}
+                                                    {% set marginamount = planprice2 - totalcost %}
+
+{{marginamount / planprice2 }}
+
+
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endfor %}
                                    
-                                    {{marginamount / planprice2 }}
+                                    
                                 </td>
                             </tr>
 
