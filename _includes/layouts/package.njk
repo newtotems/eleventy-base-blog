@@ -18,7 +18,7 @@ title: The Face Pack - Pack Information
                             {{fname}}</h1>
                             {% for plan in plans%}
                             {% if plan.planid == customer.plan %}
-                                <h3>PLAN : {{plan.name}}</h3>
+                                <p class="d-block d-print-none text-center" style="width:100%;color:#ec4471;">PLAN : {{plan.name | capitalize }}</p>
                             {% endif %}
                             {% endfor %}
                             
