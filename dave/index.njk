@@ -95,7 +95,7 @@ eleventyExcludeFromCollections: true
                                         <div class="modal-content">
                                             <div class="card card-body">
 
-                                                <table class="table">
+                                                <table class="table text-left">
                                                     <tbody>
                                                         {% for item in order.contents %}
                                                             <tr>
@@ -172,7 +172,7 @@ eleventyExcludeFromCollections: true
                                     </div>
 
 
-                                   <a href="#" data-toggle="modal" data-target="#item{{loop.index}}">#
+                                   <a href="#" data-toggle="modal" data-target="#item{{loop.index}}">
                                         &pound; {{ totalcost | round(2)}}
                                         </a>
 
