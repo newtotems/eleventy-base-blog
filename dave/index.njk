@@ -157,7 +157,7 @@ eleventyExcludeFromCollections: true
                                                                 <td>
                                                                     &pound;
                                                                     {% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost + totalstripecharges %}
-                                                                    &pound; {{ totalcost | round(2)}}</td>
+                                                                    {{ totalcost | round(2)}}</td>
                                                             </tr>
                                                         </tbody>
 
@@ -175,7 +175,8 @@ eleventyExcludeFromCollections: true
                                 </td>
                                 <td class="text-right">
 
-                                  &pound;  {{ totalcost | round(2) }}
+                                    &pound;
+                                    {{ totalcost | round(2)}}
 
                                 </td>
                                 <td class="text-right">
@@ -188,7 +189,7 @@ eleventyExcludeFromCollections: true
                                                     {% set planprice2 = plan.price %}
                                                     {% set marginamount = planprice2 - totalcost %}
 
-&pound; {{marginamount | round(2) }}
+{{marginamount | round(2)}}
 
 
                                                 {% endif %}
@@ -208,7 +209,7 @@ eleventyExcludeFromCollections: true
                                                     {% set planprice2 = plan.price %}
                                                     {% set marginamount = planprice2 - totalcost %}
 
-&pound; {{marginamount / planprice2  | percent(2) | round(2)}}
+{{marginamount / planprice2  | percent(2) }}
 
 
                                                 {% endif %}
