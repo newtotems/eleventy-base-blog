@@ -15,6 +15,12 @@ templateClass: tmpl-post
                     <div class="col-lg-6 pt-4 mt-4 row">
                         <h1 class="row d-block d-print-none text-center" style="width:100%">Here's whats in your pack this month,
                             {{fname}}</h1>
+                            {% for plan in plans%}
+                            {% if plan.planid == customer.plan %}
+                                <h3>PLAN : {{plan.name}}</h3>
+                            {% endif %}
+                            {% endfor %}
+                            
                         <p class="d-block d-print-none text-center" style="width:100%">Remember, each pack is unique to you! Mention &nbsp;
                             <strong>
                                 #thefacepack
