@@ -46,37 +46,14 @@ title: The Face Pack - Pack Information
                                 <div class="col-md-4">
 
                                     <div class="row">
-<div class="col-lg-12">
+                                        <div class="col-lg-12">
                                         {% for image in unit.imgs %}
                                             <img src="{{image}}" alt="" height="200" style="max-width:100%;display:block;margin: 0 auto"/>
                                         {% endfor %}
                                         </div>
 
-                                        {% for brand in brands %}
-
-                                            {% if brand.id == unit.brandid %}
-
-                                                {% if brand.logo %}
-                                                <div class="col-lg-6">
-                                                    <img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:100%;display:block;margin: 0 auto">
-                                                     </div>
-                                                {% endif %}
-                                               
-
-                                                {% if brand.country %}
-                                                    {% for flag in countries %}
-                                                        {% if brand.country == flag.id %}
-                                                            <div class="col-lg-6">
-                                                                <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30" style="max-width:100%;display:block;margin: 0 auto;border: 1px solid #ccc;">
-                                                                </div>
-                                                        {% endif %}
-                                                    {% endfor %}
-                                                {% endif %}
-
-                                            {% endif %}
-                                        {% endfor %}
                                         {% if unit.url %}
-                                            <div class="col-lg-12">
+                                            <div class="col-12">
                                                 <a href="{{unit.url}}" target="_blank" class="btn btn-lg btn-primary" style="max-width:100%;display:block;margin: 10px auto;">More Info</a>
                                             </div>
                                         {% endif %}
@@ -87,6 +64,33 @@ title: The Face Pack - Pack Information
                                 <div class="col-md-8 text-left">
                                     <h2>{{unit.name}}</h2>
                                     <p>{{unit.description}}</p>
+
+
+ {% for brand in brands %}
+
+                                            {% if brand.id == unit.brandid %}
+
+                                                {% if brand.logo %}
+                                                <div class="col-12">
+                                                    <img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:100%;display:block;margin: 0 auto">
+                                                     </div>
+                                                {% endif %}
+                                               
+
+                                                {% if brand.country %}
+                                                    {% for flag in countries %}
+                                                        {% if brand.country == flag.id %}
+                                                            <div class="col-12">
+                                                                <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30" style="max-width:100%;display:block;margin: 0 auto;border: 1px solid #ccc;">
+                                                                </div>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                {% endif %}
+
+                                            {% endif %}
+                                        {% endfor %}
+
+
                                 </div>
                             </div>
                         {% endif %}
