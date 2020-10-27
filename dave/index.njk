@@ -59,6 +59,7 @@ eleventyExcludeFromCollections: true
                         {% set stripe_payment_charge = 0.20 %}
                         {% set stripe_billing_percent = 0.005 %}
                         {% set totalstripecharges = 0 %}
+                        {% set marginamount = 0 %}
 
                         <tr>
                              <td class="text-left">
@@ -186,8 +187,9 @@ eleventyExcludeFromCollections: true
                                             {% for plan in plans %}
                                                 {% if plan.planid == customer.plan %}
                                                     {% set planprice2 = plan.price %}
+                                                    {% set marginamount = planprice2 - totalcost %}
 
-{{planprice2 - totalcost | round(2)}}
+{{marginamount | round(2)}}
 
 
                                                 {% endif %}
@@ -197,7 +199,8 @@ eleventyExcludeFromCollections: true
 
                                 </td>
                                 <td>
-                                    margin
+                                   
+                                    {{marginamount / plan.price }}
                                 </td>
                             </tr>
 
