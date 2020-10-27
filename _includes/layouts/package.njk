@@ -72,7 +72,7 @@ title: The Face Pack - Pack Information
 
                                                 {% if brand.logo %}
                                                
-                                                    <img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-height:50px;display:block;margin: 0 auto">
+                                                    <img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-height:50px;display:inline-block;margin: 0 auto">
                                                      
                                                 {% endif %}
                                                
@@ -81,7 +81,7 @@ title: The Face Pack - Pack Information
                                                     {% for flag in countries %}
                                                         {% if brand.country == flag.id %}
                                                             
-                                                                <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30" style="max-width:100%;display:block;margin: 0 auto;border: 1px solid #ccc;">
+                                                                <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30" style="max-width:100%;display:inline-block;margin: 0 auto;border: 1px solid #ccc;">
                                                                
                                                         {% endif %}
                                                     {% endfor %}
