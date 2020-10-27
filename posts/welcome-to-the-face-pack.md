@@ -2,13 +2,13 @@
 title: The Face Pack - The best sheet, rinse & peel face mask subscription club
 description: Discover the best sheet, rinse and peel masks from around the world.
 date: 2020-10-01
-limage: /img/logo.png
+limage: /img/blog/welcome-to-the-face-pack.jpg
 tags:
   - site
 layout: layouts/post.njk
 ---
 
-![Welcome to The Face Pack - Discover sheet, rinse and peel beauty facial masks from around the world](https://www.thefacepack.com/img/logo.png#title)
+![Welcome to The Face Pack - Discover sheet, rinse and peel beauty facial masks from around the world](https://www.thefacepack.com/img/blog/welcome-to-the-face-pack.jpg#title)
 
 <em>The Face Pack is the ultimate sheet, rinse and peel **face mask [subscription service](https://www.thefacepack.com/subscribe)**, here's a little bit about how we're different...</em>
 
