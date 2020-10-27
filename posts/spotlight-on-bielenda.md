@@ -1,5 +1,5 @@
 ---
-title: Bielenda - Sheet, rinse and peel masks from Poland / The Face Pack Blog
+title: Spotlight On Bielenda - Sheet, rinse and peel masks from Poland
 description: The first of our Spotlight series looks at Polish beauty mask brand Bielenda
 date: 2020-10-22
 limage: /img/blog/spotlight-bielenda-rinse-peel-masks.jpg

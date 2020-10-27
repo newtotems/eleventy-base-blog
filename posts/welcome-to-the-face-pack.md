@@ -1,5 +1,5 @@
 ---
-title: Welcome to The Face Pack - The ultimate sheet, rinse and peel face mask subscription club / The Face Pack blog
+title: Welcome to The Face Pack - The ultimate sheet, rinse and peel face mask subscription club
 description: Discover the best sheet, rinse and peel masks from around the world.
 date: 2020-10-01
 limage: /img/logo.png
