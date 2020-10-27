@@ -23,9 +23,9 @@ eleventyExcludeFromCollections: true
                         <th scope="col">Date</th>
                         <th scope="col">Pack ID</th>
                         <th scope="col">Customer Name</th>
-                        <th scope="col">Total Cost</th>
-                        <th scope="col">Profit</th>
-                        <th scope="col">Margin</th>
+                        <th scope="col" class="text-right">Total Cost</th>
+                         <th scope="col" class="text-right">Profit</th>
+                         <th scope="col" class="text-right">Margin</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -172,7 +172,7 @@ eleventyExcludeFromCollections: true
                                     </div>
 
 
-                                   <a href="#" data-toggle="modal" data-target="#item{{loop.index}}">
+                                   <a href="#" data-toggle="modal" data-target="#item{{loop.index}}" style="text-decoration:underline">
                                         &pound; {{ totalcost | round(2)}}
                                         </a>
 
