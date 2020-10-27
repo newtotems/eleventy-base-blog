@@ -87,6 +87,10 @@ li {
     padding: 0;
 }
 
+a:hover {
+    color: #f39bb2;
+}
+
 body {
     font-size: 1.6rem;
     color: #0a1f2d;
