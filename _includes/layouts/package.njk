@@ -67,27 +67,28 @@ title: The Face Pack - Pack Information
 
 
  {% for brand in brands %}
-
+ <div class="col-12">
                                             {% if brand.id == unit.brandid %}
 
                                                 {% if brand.logo %}
-                                                <div class="col-12">
+                                               
                                                     <img src="/img/brands/{{brand.logo}}" alt="{{brand.name}}" style="max-width:100%;display:block;margin: 0 auto">
-                                                     </div>
+                                                     
                                                 {% endif %}
                                                
 
                                                 {% if brand.country %}
                                                     {% for flag in countries %}
                                                         {% if brand.country == flag.id %}
-                                                            <div class="col-12">
+                                                            
                                                                 <img src="/img/flags/{{flag.flag}}" alt="{{flag.name}}" title="{{flag.name}}" height="30" style="max-width:100%;display:block;margin: 0 auto;border: 1px solid #ccc;">
-                                                                </div>
+                                                               
                                                         {% endif %}
                                                     {% endfor %}
                                                 {% endif %}
 
                                             {% endif %}
+                                            </div>
                                         {% endfor %}
 
 
