@@ -210,7 +210,7 @@ eleventyExcludeFromCollections: true
                                                     {% set marginamount = planprice2 - totalcost %}
                                                     {% set marginpercent = marginamount / planprice2 %}
 
-{{ marginpercent | round(2)}} 	&#37;
+{{ marginpercent | replace("0.","") | round(2)}} 	&#37;
 
 
                                                 {% endif %}
