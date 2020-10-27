@@ -175,8 +175,7 @@ eleventyExcludeFromCollections: true
                                 </td>
                                 <td class="text-right">
 
-                                    &pound;
-                                    {{ totalcost | round(2)}}
+                                   {{ totalcost | round(2) | currency("£")}}
 
                                 </td>
                                 <td class="text-right">
@@ -189,7 +188,7 @@ eleventyExcludeFromCollections: true
                                                     {% set planprice2 = plan.price %}
                                                     {% set marginamount = planprice2 - totalcost %}
 
-{{marginamount | round(2)}}
+{{marginamount | round(2) | currency("£")}}
 
 
                                                 {% endif %}
@@ -209,7 +208,7 @@ eleventyExcludeFromCollections: true
                                                     {% set planprice2 = plan.price %}
                                                     {% set marginamount = planprice2 - totalcost %}
 
-{{marginamount / planprice2  | percent(2) | round(2) }}
+{{marginamount / planprice2  | percent(2) | round(2)  | currency("£")}}
 
 
                                                 {% endif %}
