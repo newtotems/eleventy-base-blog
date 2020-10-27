@@ -153,9 +153,9 @@ eleventyExcludeFromCollections: true
                                                                 <td>
                                                                     &pound;
                                                                     {% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost + totalstripecharges %}
-                                                                   <a href="#" data-toggle="modal" data-target="#item{{loop.index}}">
+                                                                   
                                                                        {{ totalcost | round(2)}}
-                                                                       </a>
+                                                                       
                                                                        </td>
                                                             </tr>
                                                         </tbody>
@@ -172,8 +172,9 @@ eleventyExcludeFromCollections: true
                                     </div>
 
 
-                                    &pound;
-                                    {{ totalcost | round(2)}}
+                                   <a href="#" data-toggle="modal" data-target="#item{{loop.index}}">#
+                                        &pound; {{ totalcost | round(2)}}
+                                        </a>
 
                                 </td>
                                 <td class="text-right">
