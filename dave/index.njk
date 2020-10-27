@@ -105,7 +105,7 @@ eleventyExcludeFromCollections: true
                                                                         <td>
                                                                             {{mask.name}}
                                                                         </td>
-                                                                        <td>
+                                                                        <td class="text-right">
                                                                             {{mask.cost}}
                                                                         </td>
 
@@ -127,30 +127,30 @@ eleventyExcludeFromCollections: true
 
                                                             <tr>
                                                                 <td>Postage</td>
-                                                                <td>{{order.postage}}</td>
+                                                                 <td class="text-right">{{order.postage}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Insert</td>
-                                                                <td>{{insertcost}}</td>
+                                                                 <td class="text-right">{{insertcost}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Stickers</td>
-                                                                <td>{{stickercost}}</td>
+                                                                 <td class="text-right">{{stickercost}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Envelopes</td>
-                                                                <td>{{envelopecost}}</td>
+                                                                 <td class="text-right">{{envelopecost}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Stripe</td>
-                                                                <td>
+                                                                 <td class="text-right">
                                                                     {{totalstripecharges | round(2)}}
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>&nbsp;
                                                                 </td>
-                                                                <td>
+                                                                 <td class="text-right">
                                                                     &pound;
                                                                     {% set totalcost = totalcost + order.postage + insertcost + stickercost + envelopecost + totalstripecharges %}
                                                                    
