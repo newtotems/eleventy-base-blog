@@ -1,10 +1,8 @@
 ---
 layout: layouts/post.njk
-title: About Me
+title: About The Face Pack - Why you should join the best sheet, rinse & peel face mask subscription club
 templateClass: tmpl-post
-eleventyNavigation:
-  key: About Me
-  order: 3
 ---
 
-I am a person that writes stuff.
+{% include "usp.njk" %}
+{% include "customer-quote.njk" %}
