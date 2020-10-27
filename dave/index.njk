@@ -189,7 +189,7 @@ eleventyExcludeFromCollections: true
                                                     {% set planprice2 = plan.price %}
                                                     {% set marginamount = planprice2 - totalcost %}
 
-{{marginamount | round(2)}}
+&pound; {{marginamount | round(2)}}
 
 
                                                 {% endif %}
@@ -209,7 +209,7 @@ eleventyExcludeFromCollections: true
                                                     {% set planprice2 = plan.price %}
                                                     {% set marginamount = planprice2 - totalcost %}
 
-{{marginamount / planprice2 | round(2)}}
+&pound; {{marginamount / planprice2 | round(2)}}
 
 
                                                 {% endif %}
