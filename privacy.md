@@ -1,8 +1,7 @@
 ---
 layout: layouts/post.njk
 eleventyExcludeFromCollections: true
-renderData:
-    title: "Privacy Policy - join The Face Pack!"
+title: "Privacy Policy - join The Face Pack!"
 ---
 
 # Privacy Policy

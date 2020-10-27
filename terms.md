@@ -1,5 +1,6 @@
 ---
 layout: layouts/post.njk
+title: Website terms & conditions - The Face Pack
 eleventyExcludeFromCollections: true
 ---
 
