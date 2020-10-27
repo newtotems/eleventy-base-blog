@@ -31,6 +31,6 @@ Bielenda is famous for adding scrub and exfoliation into the masking mix and the
 Safety and ethics are a big part of the Bielenda philosophy and as such they never test products on animals and only use products from Certified Crops and ecologically approved ingredients. They hold an ISO 14001 certificate which is an international standard for environmental management aimed at minimizing the impact of business on the environment.
 
 ## Experience Bielenda With The Face Pack Subscription
-One of the most recognized brands in Poland, Bielenda cosmetics are also available in over 45 countries around the world, and of course as we love Bielenda so much you're likely to see one or two Bielenda face masks pop up in your monthly skin care subscription from **The Face Pack**. 
+One of the most recognized brands in Poland, Bielenda cosmetics are also available in over 45 countries around the world, and of course as we love Bielenda so much you're likely to see one or two Bielenda face masks pop up in your [monthly skin care subscription](https://www.thefacepack.com/subscribe)  from **The Face Pack**. 
 
 But which mask will you get? The fun part is finding out!
