@@ -364,7 +364,7 @@ main {
     right: -5px;
 }
 
-.icon-external-link1:hover {
+a:hover .icon-external-link1 {
     color: #f39bb2;
 }
 
