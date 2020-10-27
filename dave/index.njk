@@ -106,7 +106,7 @@ eleventyExcludeFromCollections: true
                                                                             {{mask.name}}
                                                                         </td>
                                                                         <td class="text-right">
-                                                                            {{mask.cost}}
+                                                                            {{mask.cost | round(2)}}
                                                                         </td>
 
                                                                     {% endif %}
@@ -127,19 +127,19 @@ eleventyExcludeFromCollections: true
 
                                                             <tr>
                                                                 <td>Postage</td>
-                                                                 <td class="text-right">{{order.postage}}</td>
+                                                                 <td class="text-right">{{order.postage | round(2)}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Insert</td>
-                                                                 <td class="text-right">{{insertcost}}</td>
+                                                                 <td class="text-right">{{insertcost | round(2)}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Stickers</td>
-                                                                 <td class="text-right">{{stickercost}}</td>
+                                                                 <td class="text-right">{{stickercost | round(2)}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Envelopes</td>
-                                                                 <td class="text-right">{{envelopecost}}</td>
+                                                                 <td class="text-right">{{envelopecost | round(2)}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Stripe</td>
