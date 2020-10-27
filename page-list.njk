@@ -5,6 +5,8 @@ pagination:
   alias: entries
 layout: layouts/home.njk
 permalink: /page-list/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}
+renderData:
+    title: "All pages on The Face Pack website"
 ---
 <table>
   <thead>
